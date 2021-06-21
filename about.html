@@ -95,25 +95,8 @@
        -->
       <!-- Modal body -->
       <div class="modal-body">
-        <div class="container">
-          <div class="row">
-              <div class="col-12 form login-form">
-                  <form action="login-user.php" method="POST" autocomplete="">
-                      <h2 class="text-center">Login</h2>
-                      <p class="text-center">Login with your email and password.</p>
-                   
-                      <div class="form-group">
-                          <input class="form-control" type="email" name="email" placeholder="Email Address" required value="">
-                      </div>
-                      <div class="form-group">
-                          <input class="form-control" type="password" name="password" placeholder="Password" required>
-                      </div>
-                      <div class="link forget-pass text-left"><a href="forgot-password.php">Forgot password?</a></div>
-                      <div class="form-group">
-                          <input class="form-control button" type="submit" name="login" value="Login">
-                      </div>
-                      <div class="link login-link text-center">Not yet a member? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#myModalSignup">Signup now</a></div>
-                  </form>
+        <iframe src="./users/form/signin.php" frameborder="0"></iframe>
+
               </div>
           </div>
        </div>
@@ -129,6 +112,12 @@
     </div>
   </div>
 </div>
+<style>
+iframe{
+    width: 100%;
+    height: 500px;
+  }
+</style>
 
 </div>
 <!-- The Modal -->
