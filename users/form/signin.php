@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                          
 					if($data['2fa'] == 1){
 
-header("location:../pages/login.php?email=$email");
+header("location:./pages/login.php?email=$email");
 
 					}else {
 
@@ -91,7 +91,7 @@ header("location:../pages/login.php?email=$email");
 					    $address= $_SESSION['address'] = $row['address'];
 					 
 $date = date("Y/m/d");
-					header("location:../pages/mypackage.php?Date= $date &username=$username &email=$emails ");
+					header("location:./pages/mypackage.php?Date= $date &username=$username &email=$emails ");
 					
 					//send email
 
