@@ -1,0 +1,78 @@
+*************************************************************
+**************PRODUCT OF DIGITALWEBPLUS.COM******************
+*************************************************************
+
+SCRIPT NAME: INVESTMENT PRO
+
+
+***SCRIPT CREDENTIALS***
+
+Admin Username: admin@digitalwebplus.com
+
+Admin Password: admin123 (you can change it)
+
+Admin Login URL: /admin/c2wadmin/signin.php
+
+Customers Login URL: /users/form/signin.php
+
+Database Location Folder: /db/investment.sql
+
+Configuration File Location: /config/db.php
+
+Languages: HTML, PHP, MYSQL, JavaScript and CSS
+
+/
+/
+/
+/
+
+
+***SERVER REQUIREMENT***
+
+-Shared hosting or VPS
+-PHP 7 or higher
+-Must support MySQL
+(((THIS SCRIPT HAS BEEN TESTED AND ITS WORKING PERFECTLY ON XAMPP LOCAL SERVER AND NAMECHEAP LIVE SERVER)))
+
+/
+/
+/
+/
+
+***How to install this bank script***
+
+-Download the file
+-Unzip the file
+-Unload the file to a live server or local server
+-Create a database
+-Create a database user and set a strong password for it
+-Add the database user you created to the database you just created, and grant all privileges to the user (for those on live server).
+-Go to  phpMyAdmin and import your script database file to your database (the file will be found in the db folder in the file you unzipped)
+-Edit the configuration file to your server information (edit database name, database user, and database password, it will be found in /config/db.php)
+-Create webmail, (the email the will be responsible for all mails)
+-Use your web browser to locate the site.
+-Login to your admin, go to settings, add the webmail you created, site name, and logo.
+
+/
+/
+/
+/
+
+***How to add live chat to users dashboard***
+
+The live chat is necessary in this script to enable the investors have an immediate one on one conversation with the admin.
+
+To add this you will have to register on one on the live chat widget provider. Rigister on tawk.to, smartsupp.com or any other similar live-chat. After registration you will be given some code. 
+
+Locate ***  /users/pages/header.php  *** scroll to the bottom of header.php and add the code that was given to you.
+
+/
+/
+/
+/
+
+***How to set plans***
+
+Login to your admn dashboard, on the left navigation menu, click on Add Packages, it is a sub menu of Manage Packages.
+
+Select the package you want to update and click on Update Package.
