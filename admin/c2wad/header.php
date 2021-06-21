@@ -126,7 +126,7 @@
                   <li><a href="log-outa.php">
 				  <i class="fa  fa-sign-out"></i> Log-out</a>
           </li>
-              <li><a href="../settings.php">
+              <li><a href="./settings.php">
 				  <i class="fa  fa-cog"></i> Settings</a>
           </li>
           
