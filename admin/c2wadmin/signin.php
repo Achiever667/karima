@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				    $_SESSION['uid']=$row['id'];
 				  
 
-					header("location:./c2wad/index.php");
+					header("location:../c2wad/index.php");
 				
 				
 			}else{
