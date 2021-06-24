@@ -68,11 +68,11 @@ CREATE TABLE `adminmessage` (
 
 CREATE TABLE `btc` (
   `id` int(11) NOT NULL,
-  `btc` double NOT NULL,
-  `eth` double NOT NULL,
-  `pm` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
+  `btc` double,
+  `eth` double,
+  `pm` varchar(200) COLLATE utf8_unicode_ci,
   `usd` double NOT NULL,
-  `image` tinyblob NOT NULL,
+  `image` tinyblob,
   `btctnx` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
   `status` varchar(45) COLLATE utf8_unicode_ci NOT NULL,

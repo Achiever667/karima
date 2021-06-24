@@ -295,6 +295,9 @@ function myFunction() {
        <div class="form-group">
         <input type="double" id="eth" name="eth" placeholder="Value in ETHEREUM is displayed here" readonly="true" class="form-control">
       </div>
+      <script>
+         document.getElementById('eth').style.display = "none";
+       </script>
         <div class="form-group">
         <input type="double" onchange="btcconverter(this);" onkeyup="btcconverter(this);" id="usd" name="usd" placeholder="Amount in USD" class="form-control">
         </div>

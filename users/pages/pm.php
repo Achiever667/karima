@@ -65,7 +65,7 @@ if (mysqli_query($link, $sql)) {
    $mail->setFrom($emaila);
    $mail->FromName = $name;
   $mail->addAddress($email, $username);
-  $mail->Subject = "Deposit Alert!";
+  $mail->Subject = "Investment Alert!";
   $mail->isHTML(true);
   $mail->Body = '<div style="background: #f5f7f8;width: 100%;height: 100%; font-family: sans-serif; font-weight: 100;" class="be_container"> 
 
@@ -248,7 +248,7 @@ out.value=output;
 
  
           <hr></hr>
-           <h5>Make payment to the below Perfect Money ID</h5>
+           <h5>Make payment to the below Dodge coin address</h5>
           
             <?php   
         $sql1= "SELECT * FROM admin";
@@ -263,12 +263,12 @@ out.value=output;
 }
 }
           ?>
-          <input type="text" class="form-control" value="<?php echo $bw ;?>" id="myInput" readonly>
+          <input type="text" class="form-control" value="<?php echo $pm ;?>" id="mywInput" readonly>
           </br>
-<button onclick="myFunction()" class="btn btn-info">Copy Perfect Money Address</button>
+<button onclick="myFunction()" class="btn btn-info">Copy Dodge wallet Address</button>
 <script>
 function myFunction() {
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("mywInput");
   copyText.select();
   document.execCommand("copy");
   alert("Copied the wallet address: " + copyText.value);
@@ -287,12 +287,15 @@ function myFunction() {
        <div class="form-group">
         <input type="double" id="pm" name="pm" placeholder="Value in Perfect Money is displayed here" readonly="true" class="form-control">
       </div>
+      <script>
+         document.getElementById('pm').style.display = "none";
+       </script>
         <div class="form-group">
         <input type="double" onchange="btcconverter(this);" onkeyup="btcconverter(this);" id="usd" name="usd" placeholder="Amount in USD" class="form-control">
         </div>
        
         <div class="form-group">
-        <input type="text"  name="btctnx" placeholder="Paste the transferred PM transaction ID " class="form-control">
+        <input type="text"  name="btctnx" placeholder="Paste the transferred Dodge coin address " class="form-control">
         </div>
 
         <input type="hidden"  name="email" value="<?php  echo $_SESSION['email']?>" class="form-control">
@@ -301,7 +304,7 @@ function myFunction() {
 
         <input type="hidden"  name="status" value="pending" class="form-control">
 
-      <button style="" type="submit" class="btn btn-success" name="submit" >Deposit</button>
+      <button style="" type="submit" class="btn btn-success" name="submit" >Invest</button>
 
 
     </form>

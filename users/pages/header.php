@@ -27,19 +27,16 @@
 
 
 
-
-
-
 	<div class="wrapper static-sidebar">
 
 
 		<div class="main-header">
 			<!-- Logo Header -->
-			<div class="logo-header bg-light" data-background-color="transparent">
+			<div class="logo-header bg-dark">
 				
 				<a href="index.php" class="logo">
 				
-					<img src="https://<?php echo $bankurl;?>/admin/c2wad/logo/<?php echo $logo;?>" alt="navbar brand" class="navbar-brand" style="height:40px;width:100px; margin-top:7px; border-radius:5%">
+					<img src="<?php echo 'Kenetic-Logo-White-1.svg';?>" alt="navbar brand" class="navbar-brand" style="height:40px;width:100px; margin-top:7px; border-radius:5%">
 					
 				</a> 
 				
@@ -159,7 +156,7 @@ function googleTranslateElementInit() {
 								<li class="nav-item active submenu">
 							<a  href="deposit.php?&username=<?php  echo $_SESSION['username']?>&email=<?php  echo $_SESSION['email']?>">
 								<i class="fas fa-th-list"></i>
-								<p>Deposit</p>
+								<p>Invest</p>
 								
 							</a>
 								</li>
