@@ -206,8 +206,8 @@ section {
 }
 
 .header.header-scrolled {
-  background: #000000;
-  padding: 15px 0;
+  background: #6c757d;
+  padding: 3px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
@@ -556,7 +556,7 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background: #b037ce
+  background: #A063E6
 ;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
@@ -2569,7 +2569,7 @@ input{
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background: #212645!important;
   padding: 0 0 30px 0;
   font-size: 14px;
 }
