@@ -2,13 +2,13 @@
 
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-// define('DB_SERVER', 'localhost');
-// define('DB_USERNAME', 'root');
-// define('DB_PASSWORD', '');
-// define('DB_NAME', 'investment');
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root');
+define('DB_PASSWORD', '');
+define('DB_NAME', 'investment');
  
 
-$link = mysqli_connect('localhost', 'root', '', 'investment');
+// $link = mysqli_connect('localhost', 'root', '', 'investment');
 
 
 // define('DB_SERVER', 'db4free.net:3306/investment__pro');
