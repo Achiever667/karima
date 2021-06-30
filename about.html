@@ -3,14 +3,14 @@
 
 <head>
   <meta charset="utf-8">
-  <meta  name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Kenetic </title>
   <meta content="" name="description">
 
   <meta content="" name="keywords">
 
-  <script src="assets/js/LanguageSelector.min.js"></script>	
+  <script src="assets/js/LanguageSelector.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="assets/js/locale.js"></script>
 
@@ -24,11 +24,13 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
@@ -64,7 +66,8 @@
         <ul>
           <li class="nav-link scrollto text-white"> <a href="index.html" class="text-white">Home </a></li>
 
-          <li><a class="getstarted scrollto bg-transparent border text-white" href="" data-toggle="modal" data-target="#myModal">Login / Sign Up</a></li>
+          <li><a class="getstarted scrollto bg-transparent border text-white" href="" data-toggle="modal"
+              data-target="#myModal">Login / Sign Up</a></li>
           <li class="nav-link scrollto" id="lang"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle text-white"></i>
@@ -76,70 +79,70 @@
 
     </div> -->
   </header><!-- End Header -->
-<!-- modal form -->
- <!-- Button to Open the Modal -->
- <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  <!-- modal form -->
+  <!-- Button to Open the Modal -->
+  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
   Open modal
 </button> -->
 
-<!-- The Modal -->
-<div class="modal fade" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-    
-      <!-- Modal Header -->
-      <!-- <div class="modal-header">
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <!-- <div class="modal-header">
         <h4 class="modal-title">Modal Heading</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
        -->
-      <!-- Modal body -->
-      <div class="modal-body">
-        <iframe src="./users/form/signin.php" frameborder="0"></iframe>
+        <!-- Modal body -->
+        <div class="modal-body">
+          <iframe src="./users/form/signin.php" frameborder="0"></iframe>
 
-              </div>
-          </div>
-       </div>
-      
-      <!-- Modal footer -->
-      <!-- <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal footer -->
+    <!-- <div class="modal-footer">
       <button type="button" class="btn btn-primary close" data-dismiss="modal" data-toggle="modal" data-target="#myModalSignup">
   Open modal
 </button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div> -->
-      
-    </div>
-  </div>
-</div>
-<style>
-iframe{
-    width: 100%;
-    height: 500px;
-  }
-</style>
 
-</div>
-<!-- The Modal -->
-<div class="modal ModalSignup fade" id="myModalSignup">
-  <div class="modal-dialog">
-    <div class="modal-content">
-    
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <!-- <h4 class="modal-title">Your Free Registraion In Kenetic Capitals</h4> -->
-        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-      </div>
-      
-      <!-- Modal body -->
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
+  </div>
+  </div>
+  </div>
+  <style>
+    iframe {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+
+  </div>
+  <!-- The Modal -->
+  <div class="modal ModalSignup fade" id="myModalSignup">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <!-- <h4 class="modal-title">Your Free Registraion In Kenetic Capitals</h4> -->
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
               <div class="col-12 form">
-                  <form action="signup-user.php" method="POST" autocomplete="">
-                      <h2 class="text-center">Register</h2>
-                      <p class="text-center">It's quick and easy.</p>
-                      <!-- <?php
+                <form action="signup-user.php" method="POST" autocomplete="">
+                  <h2 class="text-center">Register</h2>
+                  <p class="text-center">It's quick and easy.</p>
+                  <!-- <?php
                       if(count($errors) == 1){
                           ?>
                           <div class="alert alert-danger text-center">
@@ -164,56 +167,62 @@ iframe{
                           <?php
                       }
                       ?> -->
-                      <div class="form-group">
-                          <input class="form-control" type="text" name="name" placeholder="Full Name" required value="">
-                      </div>
-                      <div class="form-group">
-                          <input class="form-control" type="email" name="email" placeholder="Email Address" id='email' required value="">
-                      </div>
-            
-                      <div class="form-group">
-                          <input class="form-control" type="text" name="waddress" placeholder="Wallet Address" required value="">
-                      </div>
-                      
-                      <div class="form-group">
-                          <input class="form-control" type="country" name="country" placeholder="Country" required value="">
-                      </div>
-                      <div class="form-group">
-                          <input class="form-control" type="phone" name="phoneNumber" placeholder="Phone Number" required value="">
-                      </div>
-                      <div class="form-group">
-                          <input class="form-control" type="password" name="password" placeholder="Password" id='password' required>
-                      </div>
-                      <div class="form-group">
-                          <input class="form-control" type="password" name="cpassword" placeholder="Confirm password" required>
-                      </div>
-                      <div class="form-group">
-                      <input class="form-control button" type="submit" name="signup" id="signup"  value="Signup"/>
-  
-                          <!-- <input class="form-control button" type="submit" name="signup" value="Signup" id="signup" onclick="sendEmail()"> -->
-                      </div>
-                      <p id="demo"></p>
-                      <div class="link login-link text-center">Already a member? <a href="login-user.php">Login here</a></div>
-                  </form>
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Full Name" required value="">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="email" name="email" placeholder="Email Address" id='email'
+                      required value="">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="waddress" placeholder="Wallet Address" required
+                      value="">
+                  </div>
+
+                  <div class="form-group">
+                    <input class="form-control" type="country" name="country" placeholder="Country" required value="">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="phone" name="phoneNumber" placeholder="Phone Number" required
+                      value="">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password" id='password'
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" name="cpassword" placeholder="Confirm password"
+                      required>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control button" type="submit" name="signup" id="signup" value="Signup" />
+
+                    <!-- <input class="form-control button" type="submit" name="signup" value="Signup" id="signup" onclick="sendEmail()"> -->
+                  </div>
+                  <p id="demo"></p>
+                  <div class="link login-link text-center">Already a member? <a href="login-user.php">Login here</a>
+                  </div>
+                </form>
               </div>
+            </div>
           </div>
-      </div>
-      
-      <!-- Modal footer -->
-      <!-- <div class="modal-footer">
+
+          <!-- Modal footer -->
+          <!-- <div class="modal-footer">
         <button type="button" class="btn btn-primary close"   data-toggle="modal" data-target="#myModalSignup">
   Open modal
 </button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div> -->
-      
+
+        </div>
+      </div>
     </div>
+
   </div>
-</div>
 
-</div>
-
-<!-- end of modal form -->
+  <!-- end of modal form -->
 
 
 
@@ -221,69 +230,72 @@ iframe{
   <section id="hero" class="hero d-flex align-items-center" style="height: 300px;">
 
     <!-- <div class="container"> -->
-      
 
-<div id="demo" class="carousel slide" data-ride="carousel" style="height: 300px;">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active rounded-circle shadow  mb-4 bg-white""></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-    <li data-target="#demo" data-slide-to="3"></li>
-    <li data-target="#demo" data-slide-to="4"></li>
+    <div id="demo" class="carousel slide" data-ride="carousel" style="height: 300px;">
 
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="carousel-inner carousel-fade">
-    <div class="carousel-item active top__one p-5">
-      <div class="row text-center pt-5">
-        <div class="col-lg-8 d-flex flex-column justify-content-center pt-5">
-          <h1 data-aos="fade-up p-5 mt-5" class="text-secondary">About Us</h1>
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active rounded-circle shadow  mb-4 bg-white""></li>
+    <li data-target=" #demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner carousel-fade">
+        <div class="carousel-item active top__one p-5">
+          <div class="row text-center pt-5">
+            <div class="col-lg-8 d-flex flex-column justify-content-center pt-5">
+              <h1 data-aos="fade-up p-5 mt-5" class="text-secondary">About Us</h1>
+            </div>
           </div>
-      </div>    
+        </div>
       </div>
-      </div>
-     
+
       <div class="carousel-item top__two">
-      <div class="row ">
-        <div class="col-lg-8 d-flex flex-column justify-content-center ">
-          <h1 data-aos="fade-up">Professionalsmanage yourmoney</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">More than 100 of traders in the world carefully multiply your money</h2>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Invest</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
+        <div class="row ">
+          <div class="col-lg-8 d-flex flex-column justify-content-center ">
+            <h1 data-aos="fade-up">Professionalsmanage yourmoney</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">More than 100 of traders in the world carefully multiply your
+              money</h2>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a href="#about"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Invest</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
         </div> -->
-      </div>    
-      </div>    
-    <div class="carousel-item top__three">
-      <div class="row">
-        <div class="col-lg-8 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with </h2>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Invest</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            
+        </div>
+      </div>
+      <div class="carousel-item top__three">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with </h2>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a href="#about"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Invest</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
         </div> -->
-      </div>    
+        </div>
       </div>
       <div class="carousel-item top__four">
         <div class="row">
@@ -292,7 +304,8 @@ iframe{
             <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with </h2>
             <div data-aos="fade-up" data-aos-delay="600">
               <div class="text-center text-lg-start">
-                <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <a href="#about"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Invest</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -302,229 +315,264 @@ iframe{
           <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
             <img src="assets/img/hero-img.png" class="img-fluid" alt="">
           </div> -->
-        </div>    
-        </div>    
-    <div class="carousel-item top__five">
-      <div class="row">
-        <div class="col-lg-8 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with </h2>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="text-center text-lg-start">
-              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                <span>Invest</span>
-                <i class="bi bi-arrow-right"></i>
-              </a>
-            
+        </div>
+      </div>
+      <div class="carousel-item top__five">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column justify-content-center">
+            <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with </h2>
+            <div data-aos="fade-up" data-aos-delay="600">
+              <div class="text-center text-lg-start">
+                <a href="#about"
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                  <span>Invest</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
         </div> -->
-      </div>    
-      </div>    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </a>
   <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon bg-white"></span> -->
-  </a>
-</div>
+    </a>
+    </div>
 
-     
+
     </div>
 
   </section><!-- End Hero -->
 
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+  <!-- ======= Team Section ======= -->
+  <section id="team" class="team">
 
-      <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <h2>Team</h2>
-          <p>Our hard working team</p>
-        </header>
+      <header class="section-header">
+        <h2>Team</h2>
+        <p>Our hard working team</p>
+      </header>
 
-        <div class="row gy-4">
+      <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/AKA8218-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/AKA8218-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/jehan-chu-637101/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Jehan Chu </h4>
-                <span> Kenetic Founder / Blockchain Tech VC</span>
-                <p><span class="text-dark">Advisor to Melonport, QTUM and OpenANX Co-Chairman HK Fintech Association Blockchain Committee Founder, Ethereum HK, Hyperledger community and Co-founder, Bitcoin Association HK</span></p>
-               
+                <a href="https://www.linkedin.com/in/jehan-chu-637101/"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-          </div>
+            <div class="member-info">
+              <h4>Jehan Chu </h4>
+              <span> Kenetic Founder / Blockchain Tech VC</span>
+              <p><span class="text-dark">Advisor to Melonport, QTUM and OpenANX Co-Chairman HK Fintech Association
+                  Blockchain Committee Founder, Ethereum HK, Hyperledger community and Co-founder, Bitcoin Association
+                  HK</span></p>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/AKA8128-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/AKA8128-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/weinbergdaniel/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Daniel Weinberg</h4>
-                <span> Chairman Kenetic Trading</span>
-                <p><span class="text-dark">20 years’ experience in Trading, Founding member Optiver Global Foundation, Member of International Advisory Board FDC, and derivatives advisory committees for HKEX, SGX and KRX, Board member of Simple Token Foundation and Airswap </span></p>
-               
+                <a href="https://www.linkedin.com/in/weinbergdaniel/"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-          </div>
+            <div class="member-info">
+              <h4>Daniel Weinberg</h4>
+              <span> Chairman Kenetic Trading</span>
+              <p><span class="text-dark">20 years’ experience in Trading, Founding member Optiver Global Foundation,
+                  Member of International Advisory Board FDC, and derivatives advisory committees for HKEX, SGX and KRX,
+                  Board member of Simple Token Foundation and Airswap </span></p>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/AKA8008-Edit-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/AKA8008-Edit-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/david-wills-0a299839/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>David Wills</h4>
-                <span>CEO Kenetic Trading </span>
-                <p><span class="text-dark">Former Managing Director and Head of Asia Trading Och-Ziff Capital, Former Chairperson HKEX Hedge Fund Market Council, Co-Founder of <a href="https://www.caspian.tech/" target="_blank" rel="noopener">Caspian</a>  </span></p>
-               
+                <a href="https://www.linkedin.com/in/david-wills-0a299839/"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
-          </div>
+            <div class="member-info">
+              <h4>David Wills</h4>
+              <span>CEO Kenetic Trading </span>
+              <p><span class="text-dark">Former Managing Director and Head of Asia Trading Och-Ziff Capital, Former
+                  Chairperson HKEX Hedge Fund Market Council, Co-Founder of <a href="https://www.caspian.tech/"
+                    target="_blank" rel="noopener">Caspian</a> </span></p>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
-            <div class="member">
-              <div class="member-img">
-                <img src="assets/img/AKA8250-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/AKA8250-Cropped-uai-1032x1032.jpg" class="img-fluid" alt="">
+              <div class="social">
+                <!-- <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a> -->
-                  <a href="https://www.linkedin.com/in/benjamin-roth-06154566/"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Ben Roth</h4>
-                <span>Head of Trading</span>
-                <p>Former Derivatives Trader &amp; Portfolio Manager at FNY Capital, Former Partner at Optiver, Member of Sydney Angels and an active early-stage angel investor</p>
+                <a href="https://www.linkedin.com/in/benjamin-roth-06154566/"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
+            <div class="member-info">
+              <h4>Ben Roth</h4>
+              <span>Head of Trading</span>
+              <p>Former Derivatives Trader &amp; Portfolio Manager at FNY Capital, Former Partner at Optiver, Member of
+                Sydney Angels and an active early-stage angel investor</p>
+            </div>
           </div>
-
         </div>
 
       </div>
 
-    </section><!-- End Team Section -->
+    </div>
 
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
+  </section><!-- End Team Section -->
 
-      <div class="container" data-aos="fade-up">
+  <!-- ======= Clients Section ======= -->
+  <section id="clients" class="clients">
 
-        <header class="section-header">
-          <h2>Our Affliates</h2>
-          <p>Our Partinership Indept</p>
-        </header>
+    <div class="container" data-aos="fade-up">
 
-        <div class="clients-slider swiper-container">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a href="https://hubbis.com/event/independent-wealth-management-forum-2019-2019-10-22/"><img src="assets/img/clients/840_Hubbis-uai-516x142.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide" data-bs-target="https://abasummit.io/speaker/jehan-chu/"><img src="assets/img/clients/ABS_logo_bg-03-e1547778630339.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/coindesk-logo-uai-258x50.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/download-1-uai-258x135.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/download-2-uai-258x172.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/TechCrunch-Logo-uai-258x92.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/our_synergy_hover.svg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/our_antares_hover.svg" class="img-fluid" alt=""></div>
+      <header class="section-header">
+        <h2>Our Affliates</h2>
+        <p>Our Partinership Indept</p>
+      </header>
+
+      <div class="clients-slider swiper-container">
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><a
+              href="https://hubbis.com/event/independent-wealth-management-forum-2019-2019-10-22/"><img
+                src="assets/img/clients/840_Hubbis-uai-516x142.jpg" class="img-fluid" alt=""></a></div>
+          <div class="swiper-slide" data-bs-target="https://abasummit.io/speaker/jehan-chu/"><img
+              src="assets/img/clients/ABS_logo_bg-03-e1547778630339.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/coindesk-logo-uai-258x50.png" class="img-fluid" alt="">
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide"><img src="assets/img/clients/download-1-uai-258x135.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="assets/img/clients/download-2-uai-258x172.png" class="img-fluid" alt="">
+          </div>
+          <div class="swiper-slide"><img src="assets/img/clients/TechCrunch-Logo-uai-258x92.jpg" class="img-fluid"
+              alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/our_synergy_hover.svg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/clients/our_antares_hover.svg" class="img-fluid" alt=""></div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
+    </div>
 
-    </section><!-- End Clients Section -->
+  </section><!-- End Clients Section -->
 
-    <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
+  <!-- ======= Recent Blog Posts Section ======= -->
+  <section id="recent-blog-posts" class="recent-blog-posts">
 
-      <div class="container" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
 
-        <header class="section-header">
-          <h2>Media </h2>
-          <p>Recent posts form our Conferences</p>
-        </header>
+      <header class="section-header">
+        <h2>Media </h2>
+        <p>Recent posts form our Conferences</p>
+      </header>
 
-        <div class="row">
+      <div class="row">
 
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/conference1.png" class="img-fluid" alt=""></div>
-              <span class="post-date">28 November, 2018 in New York</span>
-              <h3 class="post-title">Consensus Invest, New York</h3>
-              <a href="https://www.coindesk.com/events/consensus-invest-2018/" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
+        <div class="col-lg-4">
+          <div class="post-box">
+            <div class="post-img"><img src="assets/img/conference1.png" class="img-fluid" alt=""></div>
+            <span class="post-date">28 November, 2018 in New York</span>
+            <h3 class="post-title">Consensus Invest, New York</h3>
+            <a href="https://www.coindesk.com/events/consensus-invest-2018/"
+              class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
-
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/conference.jpg" class="img-fluid" alt=""></div>
-              <span class="post-date">
-                22 October 2019</span>
-              <h3 class="post-title">Hubbis Independent Wealth Management Forum</h3>
-              <a href="https://hubbis.com/event/independent-wealth-management-forum-2019-2019-10-22/" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="post-box">
-              <div class="post-img"><img src="assets/img/clients/ABS_logo_bg-03-e1547778630339.png" class="img-fluid" alt=""></div>
-              <span class="post-date">02-03 July 2019</span>
-              <h3 class="post-title">Asia Blockchain Summit</h3>
-              <a href="https://abasummit.io/speaker/jehan-chu/" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-
         </div>
 
+        <div class="col-lg-4">
+          <div class="post-box">
+            <div class="post-img"><img src="assets/img/conference.jpg" class="img-fluid" alt=""></div>
+            <span class="post-date">
+              22 October 2019</span>
+            <h3 class="post-title">Hubbis Independent Wealth Management Forum</h3>
+            <a href="https://hubbis.com/event/independent-wealth-management-forum-2019-2019-10-22/"
+              class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="post-box">
+            <div class="post-img"><img src="assets/img/clients/ABS_logo_bg-03-e1547778630339.png" class="img-fluid"
+                alt=""></div>
+            <span class="post-date">02-03 July 2019</span>
+            <h3 class="post-title">Asia Blockchain Summit</h3>
+            <a href="https://abasummit.io/speaker/jehan-chu/" class="readmore stretched-link mt-auto"><span>Read
+                More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+
       </div>
 
-    </section><!-- End Recent Blog Posts Section -->
+    </div>
 
-  
-    <!-- ======= About Section ======= -->
- <section id="about" class="about about1">
+  </section><!-- End Recent Blog Posts Section -->
 
-  <div class="container" data-aos="fade-up">
-    <div class="row gx-0">
 
-      <div class="col-lg-6 d-flex flex-column justify-content-center bg-transparent" data-aos="fade-up" data-aos-delay="200">
-        <div class="content mr-4 bg-transparent">
-          <h2>Company description</h2>
-          <p>
-          Founded in 2016, Kenetic Capita is a venture capital firm based in Hong Kong, Hong Kong. The firm seeks to invest in the blockchain tecnology sector.
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about about1">
 
-          <h2>Contact Information</h2>
+    <div class="container" data-aos="fade-up">
+      <div class="row gx-0">
+
+        <div class="col-lg-6 d-flex flex-column justify-content-center bg-transparent" data-aos="fade-up"
+          data-aos-delay="200">
+          <div class="content mr-4 bg-transparent">
+            <h2>Company description</h2>
+            <p>
+              Kenetic capital is the leading blockchain investment firm and one of the largest institutional owners of
+              cryptocurrencies and other investment platforms. kenetic capital was founded in 2016 by group of expect
+              exchange market traders. After long consultations and analytical investigations on brokerage service
+              market, it was decided to create a company, which could fill unsatisfied demand in the area of trust asset
+              management</p>
+
+            <p>Clients who have entrusted us with managing their funds get an opportunity to minimize their risks
+              (regardless of the chosen investment strategy), and this represents one of the primary targets when
+              working on the lucrative but risky crypto market. We are focused on investing in blockchain technologies
+              and other major assets, the Kenetic capital team is experienced in both traditional finance and emergent
+              blockchain technology and others services. Having strong relationships with some of the most promising
+              entrepreneurs and other top investors in the space, kenetic capital is fulfilling its strategic investment
+              philosophy by building a diversified portfolio and bringing industry-specific value-add resources to its
+              portfolio companies. Within the next several years, we envision blockchains and digital currencies having
+              an established, responsibly managed, and regulated role in the global economy.</p>
+
+            <h2>Contact Information</h2>
             <p><strong>website: <a href="https://keneticcapital.trade">www.keneticcapital.trade</a></strong></p>
             <p><strong>Formerly Known As: </strong> Jen Advisors</p>
             <p><strong>Year Founded:</strong>2016</p>
@@ -532,32 +580,35 @@ iframe{
             <p><strong>Primary Investor Type:</strong>Venture Capital</p>
             <p><strong>Our Office:</strong>Unit 1005, <br>The Centrium, <br> 60 Wyndham St, <br>Central, Hong Kong</p>
 
-            <p><strong>Primary Office:</strong>17R, Centre Hollywood <br>Hollywood Road <br> Hong Kong, 151 <br>Hong Kong</p>
+            <p><strong>Primary Office:</strong>17R, Centre Hollywood <br>Hollywood Road <br> Hong Kong, 151 <br>Hong
+              Kong</p>
 
 
 
             <!-- Unit 1005, The Centrium, 60 Wyndham St, Central, Hong Kong -->
 
-          <div class="text-center text-lg-start">
-            <a href="pdf/license wordpdf-converted.pdf"style="color: #fff; padding:10px; border-radius:50px; background:#b037ce;" class="btn-get-started   scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-              <span>Download PDF</span>
-              <i class="bi bi-arrow-right"></i>
-            </a>
+            <!-- <div class="text-center text-lg-start">
+              <a href="pdf/license wordpdf-converted.pdf"
+                style="color: #fff; padding:10px; border-radius:50px; background:#b037ce;"
+                class="btn-get-started   scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Download PDF</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div> -->
           </div>
         </div>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+          <a href="pdf/license wordpdf-converted.pdf">
+            <img src="assets/dcafbfa0-cf91-4380-a30c-1c73d01d414c.jpg" class="img-fluid" alt="">
+
+          </a>
+        </div>
+
       </div>
-
-      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-        <a href="pdf/license wordpdf-converted.pdf">
-          <img src="assets/img/cert__kenetic.jpeg" class="img-fluid" alt="">
-
-        </a>
-      </div>
-
     </div>
-  </div>
 
-</section><!-- End About Section -->
+  </section><!-- End About Section -->
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -565,12 +616,14 @@ iframe{
 
     <div class="footer-newsletter">
       <div class="container">
-      
-    <div class="social__links mx-auto">
-    
-      <a href="#" class="telegram"><i class="bi bi-telegram bx bxl-telegram"></i></a>
-      <a href="#" class="whatsapp"><i class="bi bi-whatsapp bx bxl-whatsapp text-success"></i></a>
-</div></div></div>
+
+        <div class="social__links mx-auto">
+
+          <a href="#" class="telegram"><i class="bi bi-telegram bx bxl-telegram"></i></a>
+          <a href="#" class="whatsapp"><i class="bi bi-whatsapp bx bxl-whatsapp text-success"></i></a>
+        </div>
+      </div>
+    </div>
 
     </div>
     <div class="footer-top bg-dark">
@@ -581,8 +634,8 @@ iframe{
               <img src="assets/img/Kenetic-Logo-White-1.svg" alt="">
               <!-- <span>Kenetic</span> -->
             </a>
-<span class="text-white">        &copy; Copyright <strong><span>Kenetic</span></strong>. All Rights Reserved
-</span>
+            <span class="text-white"> &copy; Copyright <strong><span>Kenetic</span></strong>. All Rights Reserved
+            </span>
           </div>
 
         </div>
@@ -593,41 +646,41 @@ iframe{
 
   </footer>
   <!-- End Footer -->
-<!-- ConveyThis code -->
-<script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
-<script type="text/javascript">
-	document.addEventListener("DOMContentLoaded", function(e) {
-		ConveyThis_Initializer.init({
-			api_key: "pub_f107c7a5a5bb8355a3aa153fd69bab9f"
-		});
-	});
-</script>
-<!-- End ConveyThis code -->
+  <!-- ConveyThis code -->
+  <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
   <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/607990c2067c2605c0c314a8/1f3ddque5';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+    document.addEventListener("DOMContentLoaded", function (e) {
+      ConveyThis_Initializer.init({
+        api_key: "pub_f107c7a5a5bb8355a3aa153fd69bab9f"
+      });
+    });
+  </script>
+  <!-- End ConveyThis code -->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/607990c2067c2605c0c314a8/1f3ddque5';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
     })();
-    </script>
+  </script>
 
 
-<script
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
-async
-></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+    async></script>
 
   <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
     }
-    </script>
-<!-- My Project 62926 -->
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </script>
+  <!-- My Project 62926 -->
+  <script type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
   <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -647,7 +700,7 @@ async
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
- 
+
 
 
 </body>
