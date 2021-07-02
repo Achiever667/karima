@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kenetic | FAQs</title>
+    <meta content="" name="description">
+
+    <meta content="" name="keywords">
+
+    <script src="assets/js/LanguageSelector.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/locale.js"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="assets/img/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="assets/img/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+    <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Kenetic - v1.4.0
+  * Template URL: https://bootstrapmade.com/Kenetic-bootstrap-startup-template/
+  * Author: Made.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top" onscroll="myFunction()">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/Kenetic-Logo-White-1.svg" alt="">
+                <!-- <span class="text-white">Capital</span> -->
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="nav-link scrollto text-white"> <a href="index.html" class="text-white">Home </a></li>
+
+                    <li><a class="getstarted scrollto bg-transparent border text-white" href="" data-toggle="modal"
+                            data-target="#myModal">Login / Sign Up</a></li>
+                    <li class="nav-link scrollto" id="lang"></a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle text-white"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+        <!-- <div class="translatm mx-auto">
+      <p class="text-center translate pt-3" id="google_translate_element"></p>
+
+    </div> -->
+    </header><!-- End Header -->
+    <!-- modal form -->
+    <!-- Button to Open the Modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button> -->
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <!-- <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+       -->
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <iframe src="./users/form/signin.php" frameborder="0"></iframe>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal footer -->
+        <!-- <div class="modal-footer">
+      <button type="button" class="btn btn-primary close" data-dismiss="modal" data-toggle="modal" data-target="#myModalSignup">
+  Open modal
+</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div> -->
+
+    </div>
+    </div>
+    </div>
+    <style>
+        iframe {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+
+    </div>
+    <!-- The Modal -->
+    <div class="modal ModalSignup fade" id="myModalSignup">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <!-- <h4 class="modal-title">Your Free Registraion In Kenetic Capitals</h4> -->
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 form">
+                                <form action="signup-user.php" method="POST" autocomplete="">
+                                    <h2 class="text-center">Register</h2>
+                                    <p class="text-center">It's quick and easy.</p>
+                                    <!-- <?php
+                      if(count($errors) == 1){
+                          ?>
+                          <div class="alert alert-danger text-center">
+                              <?php
+                              foreach($errors as $showerror){
+                                  echo $showerror;
+                              }
+                              ?>
+                          </div>
+                          <?php
+                      }elseif(count($errors) > 1){
+                          ?>
+                          <div class="alert alert-danger">
+                              <?php
+                              foreach($errors as $showerror){
+                                  ?>
+                                  <li><?php echo $showerror; ?></li>
+                                  <?php
+                              }
+                              ?>
+                          </div>
+                          <?php
+                      }
+                      ?> -->
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="name" placeholder="Full Name"
+                                            required value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" name="email"
+                                            placeholder="Email Address" id='email' required value="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" name="waddress"
+                                            placeholder="Wallet Address" required value="">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" type="country" name="country" placeholder="Country"
+                                            required value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="phone" name="phoneNumber"
+                                            placeholder="Phone Number" required value="">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" name="password"
+                                            placeholder="Password" id='password' required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" name="cpassword"
+                                            placeholder="Confirm password" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control button" type="submit" name="signup" id="signup"
+                                            value="Signup" />
+
+                                        <!-- <input class="form-control button" type="submit" name="signup" value="Signup" id="signup" onclick="sendEmail()"> -->
+                                    </div>
+                                    <p id="demo"></p>
+                                    <div class="link login-link text-center">Already a member? <a
+                                            href="login-user.php">Login here</a></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-primary close"   data-toggle="modal" data-target="#myModalSignup">
+  Open modal
+</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div> -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end of modal form -->
+
+
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center" style="height: 300px;">
+
+        <!-- <div class="container"> -->
+
+
+        <div id="demo" class="carousel slide" data-ride="carousel" style="height: 300px;">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active rounded-circle shadow  mb-4 bg-white""></li>
+    <li data-target=" #demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner carousel-fade">
+                <div class="carousel-item active top__one p-5">
+                    <div class="row text-center pt-5">
+                        <div class="col-lg-8 d-flex flex-column justify-content-center pt-5">
+                            <h1 data-aos="fade-up p-5 mt-5" class="text-secondary">FAQs</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item top__two">
+                <div class="row ">
+                    <div class="col-lg-8 d-flex flex-column justify-content-center ">
+                        <h1 data-aos="fade-up">Professionalsmanage yourmoney</h1>
+                        <h2 data-aos="fade-up" data-aos-delay="400">More than 100 of traders in the world carefully
+                            multiply your money</h2>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <div class="text-center text-lg-start">
+                                <a href="#about"
+                                    class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Invest</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div> -->
+                </div>
+            </div>
+            <div class="carousel-item top__three">
+                <div class="row">
+                    <div class="col-lg-8 d-flex flex-column justify-content-center">
+                        <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+                        <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites
+                            with </h2>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <div class="text-center text-lg-start">
+                                <a href="#about"
+                                    class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Invest</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div> -->
+                </div>
+            </div>
+            <div class="carousel-item top__four">
+                <div class="row">
+                    <div class="col-lg-8 d-flex flex-column justify-content-center">
+                        <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+                        <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites
+                            with </h2>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <div class="text-center text-lg-start">
+                                <a href="#about"
+                                    class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Invest</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+          </div> -->
+                </div>
+            </div>
+            <div class="carousel-item top__five">
+                <div class="row">
+                    <div class="col-lg-8 d-flex flex-column justify-content-center">
+                        <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+                        <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites
+                            with </h2>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <div class="text-center text-lg-start">
+                                <a href="#about"
+                                    class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span>Invest</span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div> -->
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon bg-white"></span> -->
+        </a>
+        </div>
+
+
+        </div>
+
+    </section><!-- End Hero -->
+
+   <!-- ======= F.A.Q Section ======= -->
+   <section id="faq" class="faq">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <h2>F.A.Q</h2>
+        <p>Frequently Asked Questions</p>
+      </header>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- F.A.Q List 1-->
+          <div class="accordion accordion-flush" id="faqlist1">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-1">
+                  How do i become a part of this?
+                </button>
+              </h2>
+              <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                <div class="accordion-body">
+                  You can become a part of the company by creating an account from the registration page.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-2">
+                  How Can I Transfer Cryptocurrency?
+                </button>
+              </h2>
+              <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                <div class="accordion-body">
+                  All you need to do is have a Crypto Wallet and sigin up / register with us to own your personnal
+                  dashboard and click on invest
+
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq-content-3">
+                  What About The Trading With Kenetic Capital?
+                </button>
+              </h2>
+              <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                <div class="accordion-body">
+                  Trading with us is a great idea providing with No stress and No hard time our spcialists helps you
+                  do the job <span class="text-success">@Kenetic Capital</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <!-- F.A.Q List 2-->
+          <div class="accordion accordion-flush" id="faqlist2">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2-content-1">
+                  What About The Investment Planing?
+                </button>
+              </h2>
+              <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                <div class="accordion-body">
+                  We have provided a five set of investment planing for individuals and groups depending on the
+                  financial capability but each investment comes with average interest.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2-content-2">
+                  How Can I Get The Price Idea?
+                </button>
+              </h2>
+              <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                <div class="accordion-body">
+                  The price idea is displayed in our About Us Page. </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2-content-3">
+                  How Can I Contact With You?
+                </button>
+              </h2>
+              <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                <div class="accordion-body">
+                  Just click on message icon on the down right hand side or send us a message at contact us page we
+                  will respond immidiatley
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- End F.A.Q Section -->
+
+    </section><!-- End About Section -->
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+
+                <div class="social__links mx-auto">
+
+                    <a href="#" class="telegram"><i class="bi bi-telegram bx bxl-telegram"></i></a>
+                    <a href="#" class="whatsapp"><i class="bi bi-whatsapp bx bxl-whatsapp text-success"></i></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="footer-top bg-dark">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-12 footer-info">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <img src="assets/img/Kenetic-Logo-White-1.svg" alt="">
+                            <!-- <span>Kenetic</span> -->
+                        </a>
+                        <span class="text-white"> &copy; Copyright <strong><span>Kenetic</span></strong>. All Rights
+                            Reserved
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+    <!-- ConveyThis code -->
+    <script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function (e) {
+            ConveyThis_Initializer.init({
+                api_key: "pub_f107c7a5a5bb8355a3aa153fd69bab9f"
+            });
+        });
+    </script>
+    <!-- End ConveyThis code -->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/607990c2067c2605c0c314a8/1f3ddque5';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly"
+        async></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <!-- My Project 62926 -->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
