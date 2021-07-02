@@ -1143,6 +1143,9 @@ background:#fff;
 .services .service-box.orange {
   border-bottom: 3px solid #f68c09;
 }
+.services .service-box.gold {
+  border-bottom: 3px solid #FFD700;
+}
 
 .services .service-box.orange .icon {
   color: #f68c09;
