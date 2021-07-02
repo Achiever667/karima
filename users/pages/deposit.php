@@ -309,9 +309,7 @@ function myFunctions() {
         <div class="form-group">
         <input type="double" onchange="btcconverter(this);" onkeyup="btcconverter(this);" id="usd" name="usd" placeholder="Amount in USD" class="form-control">
         </div>
-       <script>
-         document.getElementById('btc').style.display = "none";
-       </script>
+       
         <div class="form-group">
         <input type="text"  name="btctnx" placeholder="Paste the transferred btc transaction ID " class="form-control">
         </div>
@@ -322,7 +320,7 @@ function myFunctions() {
 
         <input type="hidden"  name="status" value="pending" class="form-control">
 
-      <button style="" type="submit" class="btn btn-warning" name="submit" >Invest</button>
+      <button style="" type="submit" class="btn btn-warning" name="submit" >Deposit</button>
 
 
     </form>

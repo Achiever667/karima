@@ -328,7 +328,25 @@ outline:none;
 																
 																 <input id="inp"  placeholder="Phone Number" type="text" name="phone"   value="<?php echo $phone; ?>">
                                                                  
-         
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
+                                                                 
                                                                  
                                                                   <select style="border-radius:50px; background-color:#fff; padding:20px; margin:10px; width:80%" name="country">
       <option value="AF">Select Country</option>

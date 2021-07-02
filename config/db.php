@@ -8,7 +8,7 @@ define('DB_PASSWORD', '');
 define('DB_NAME', 'investment');
  
 
-// $link = mysqli_connect('localhost', 'root', '', 'investment');
+
 
 
 // define('DB_SERVER', 'db4free.net:3306/investment__pro');
@@ -17,7 +17,7 @@ define('DB_NAME', 'investment');
 // define('DB_NAME', 'investment__pro');
 
 /* Attempt to connect to MySQL database */
-// $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
 // Check connection
 if($link === false){

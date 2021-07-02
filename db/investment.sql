@@ -68,17 +68,17 @@ CREATE TABLE `adminmessage` (
 
 CREATE TABLE `btc` (
   `id` int(11) NOT NULL,
-  `btc` double,
-  `eth` double,
-  `pm` varchar(200) COLLATE utf8_unicode_ci,
+  `btc` double ,
+  `eth` double ,
+  `pm` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
   `usd` double NOT NULL,
   `image` tinyblob,
-  `btctnx` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `email` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `status` varchar(45) COLLATE utf8_unicode_ci NOT NULL,
-  `tnxid` varchar(200) COLLATE utf8_unicode_ci NOT NULL,
-  `refcode` varchar(111) COLLATE utf8_unicode_ci NOT NULL,
-  `referred` varchar(111) COLLATE utf8_unicode_ci NOT NULL,
+  `btctnx` varchar(200) COLLATE utf8_unicode_ci ,
+  `email` varchar(45) COLLATE utf8_unicode_ci ,
+  `status` varchar(45) COLLATE utf8_unicode_ci,
+  `tnxid` varchar(200) COLLATE utf8_unicode_ci,
+  `refcode` varchar(111) COLLATE utf8_unicode_ci,
+  `referred` varchar(111) COLLATE utf8_unicode_ci,
   `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 

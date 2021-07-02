@@ -204,7 +204,7 @@ include "header.php";
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
-								<div class="card card-stats card-round bg-light shadow" style = "color: #003399">
+								<div class="card card-stats card-round bg-light shadow">
 									<div class="card-body ">
 										<div class="row">
 											<div class="col-5">
