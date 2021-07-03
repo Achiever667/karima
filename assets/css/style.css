@@ -1,13 +1,4 @@
-/**
-* Template Name: FlexStart - v1.4.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: Made.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
 }
@@ -235,7 +226,7 @@ section {
 .top__one{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide3.jpg") ;
+  background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide1.jpg") ;
   padding: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -244,7 +235,7 @@ section {
 .top__two{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/3.jpg") ;
+  background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide2.jpg") ;
   padding: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -252,7 +243,7 @@ section {
 .top__three{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide1.jpg") ;
+  background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide3.jpg") ;
   padding: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -260,7 +251,7 @@ section {
 .top__four{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide2.jpg") ;
+  background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide4.jpg") ;
   padding: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -268,7 +259,7 @@ section {
 .top__five{
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide4.jpg");
+  background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide5.jpg");
   padding: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -531,7 +522,7 @@ section {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgb(67, 9, 67) , rgba(255, 201, 248, 0.55)), url("../img/hero-bg.png") ;
+  background: linear-gradient(to top, rgb(67, 9, 67) , rgba(233, 166, 224, 0.55)), url("../img/hero-bg.png") ;
   filter: contrast(200%);
     background-size: cover;
 }
@@ -640,7 +631,7 @@ section {
   .top__one{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide3.jpg") ;
+    background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide1.jpg") ;
     padding: 200px 20px 20px 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -649,7 +640,7 @@ section {
   .top__two{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/3.jpg") ;
+    background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide2.jpg") ;
     padding: 200px 20px 20px 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -657,7 +648,7 @@ section {
   .top__three{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide1.jpg") ;
+    background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide3.jpg") ;
     padding: 200px 20px 20px 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -665,7 +656,7 @@ section {
   .top__four{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide2.jpg") ;
+    background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide4.jpg") ;
     padding: 200px 20px 20px 20px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -673,7 +664,7 @@ section {
   .top__five{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgb(45, 2, 45) , rgba(21, 2, 18, 0.55)), url("../img/slide4.jpg");
+    background: linear-gradient(to top, rgb(71, 69, 71) , rgba(75, 71, 74, 0.55)), url("../img/bg/slide5.jpg");
     padding: 200px 20px 20px 20px;
     background-repeat: no-repeat;
     background-position:50% 100%;
