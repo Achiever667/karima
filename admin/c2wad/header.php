@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -205,7 +207,7 @@
           </ul>
         </li>
        
-       <li> <?php include "datatabbles.htm";?></li>
+       <!-- <li> <?php include "datatabbles.htm";?></li> -->
        
       </ul>
     </section>
@@ -215,6 +217,7 @@
   
    
 
+  <?php ob_end_flush();?>
 
 
 <!-- jQuery 3 -->

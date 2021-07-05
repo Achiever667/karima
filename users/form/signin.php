@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <?php
 session_start();
 
@@ -305,6 +306,8 @@ outline:none;
 						    </div>
 						</div>
 
+						<?php ob_end_flush();?>
+<div>
 
 <!-- js -->
 

@@ -1,3 +1,6 @@
+<?php ob_start(); ?>
+
+
 <?php
 // Include config file
 include "../../config/db.php";
@@ -256,7 +259,7 @@ function googleTranslateElementInit() {
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-<title>Crypto Investment Script</title>
+<title>Kenetic || Sign up</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -270,24 +273,58 @@ function googleTranslateElementInit() {
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome-icons -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <style>
 
  input{
-padding:20px;
+padding:15px;
+width:100%;
 margin:10px;
-border-radius:50px;
+border:none;
+border-bottom: 1px solid #000;
+border-radius:10px;
 text-align:left;
 outline-style:none;
 outline-color:none;	
 outline:none;
 }
-
+input:focus{
+    border-bottom: 1px solid purple;
+}
 .registration{
 	background:#fff;
+    width:40%;
 	padding:20px;
-    margin:10px;
+    margin:auto;
     box-shadow:0.4px 4px 4px 0.2px #000fff;
+}
+
+@media(max-width:900px) {
+
+    input{
+padding:15px;
+width:100%;
+margin:10px;
+border:none;
+border-bottom: 1px solid #000;
+border-radius:10px;
+text-align:left;
+outline-style:none;
+outline-color:none;	
+outline:none;
+}
+input:focus{
+    border-bottom: 1px solid purple;
+}
+.registration{
+	background:#fff;
+    width:100%;
+	padding:20px;
+    margin:auto;
+    box-shadow:0.4px 4px 4px 0.2px #000fff;
+}
+    
 }
 </style>
 			
@@ -297,7 +334,8 @@ outline:none;
 
 						<div class="">
 							<!-- /signup -->
-							   <div class="">
+							   <div class="signup m-4 text-left shadow ">
+                                   <h1 class="p-3 text-secondary">Sign Up </h1>
 								<div class="registration">
 								
 												<!-- <div id="den" class="signin-form profile"  style="margin-top:50px;background-color:#220a80"> -->
@@ -348,7 +386,7 @@ outline:none;
                                                                  
                                                                  
                                                                  
-                                                                  <select style="border-radius:50px; background-color:#fff; padding:20px; margin:10px; width:80%" name="country">
+                                                                  <select style="border-radius:20px; border:none; border-bottom:1px solid #000; background-color:#fff; padding:15px; margin:10px; width:100%" name="country">
       <option value="AF">Select Country</option>
       <option value="Afghanistan">Afghanistan</option>
  <option value="Åland Islands">Åland Islands</option>
@@ -608,24 +646,43 @@ outline:none;
                                                                 
                                                                 <span class="help-block"><?php echo $cpassword_err; ?></span>
 
-                                                                <input id="inp" type="text" name="referred"  readonly value="<?php echo $refcode; ?>">
+                                                                <input id="inp" type="text" name="referred"  placeholder="Referral code (Optional)" value="<?php echo $refcode; ?>">
                                                                 
                                                                 <br>
                                                                 
-                                                                <div class="g-recaptcha" data-sitekey="6Ldv2bcUAAAAAFeYuQAQWH7I_BVv2_2_vvmn2Fpp"></div>
-       <span id="captcha_error" class="text-danger"></span>
+                                                                <div class="g-recaptcha" data-sitekey="6Lc-BHUbAAAAABLrjwY56Oh3H8WRRQ4ZpMf2g2ql"></div>
+                                                                 <span id="captcha_error" class="text-danger"></span>
       </div>
-                                                                <label>Accept terms</label>
+                                                              <div class="terms">
+                                                              <label>Accept terms</label>
+
                                                                  <input id="inp" type="checkbox"  name="terms"  value="" >
-							</br>
-                            <p><a href="#" style="color:#000 margin:10px;"> By clicking Sign Up, I agree to your terms</a></p>
+
+                                                              </div>
+							<!-- </br> -->
+                            <p><a href="..../pdf/Terms-of-Use-and-Privacy-Policy.pdf
+"> By clicking Sign Up, I agree to your terms</a></p>
 															<div class="tp">
-																<input  type="submit" name="submit" value="Sign Up">
-                                                                <span>                                                            <a style="color:#000">Already a member ? <a href="signin.php"> Login</a>
+																<input class="btn  btn-secondary" type="submit" name="submit" value="Sign Up">
+                                                                <span>    <a style="color:#000">Already a member ? <a href="signin.php"> Login</a>
                                                             </span>
 															</div>
                                                         
                                                         </form>
+                                                        <style>
+                                                            .btn{color:#fff;
+                                                                background:purple;
+                                                                margin:10px;
+
+                                                            }
+                                                            .terms label, .terms input{
+                                                                display:inline-block;
+                                                            }
+                                                            .signup h1{
+                                                                color:#000;
+                                                                padding:10px 30px;
+                                                            }
+                                                        </style>
 													</div>
 													
 													
@@ -639,7 +696,8 @@ outline:none;
 											 <!--copy rights end here-->
 						    </div>
 						</div>
-						
+                        <?php ob_end_flush();?>
+
 
           <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 		  

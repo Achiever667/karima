@@ -117,7 +117,7 @@ include "header.php";
               
 
 								<div class="ml-md-auto py-2 py-md-0">
-									<label for="" class="p-1 text-secondary">Referral Link</label>
+									<label for="" class="p-1 text-secondary">Referral Link</label> <br>
  <input type="text" id="myInput" style="width:50%; padding:4px; border-radius:5%;" value="https://<?php echo $bankurl;?>/users/form/signup.php?refcode=<?php echo $_SESSION['refcode'];?>" class="p-2 text-secondary" readonly="true"/>
  <button class="btn border-secondary" onclick="myFunction()">Copy</button>
 								</div>
@@ -239,6 +239,9 @@ include "header.php";
 
 													<p class="card-category" style="color:#000">Referral Bonus</p>
 													<h4 class="card-title" style="color:#000">	$<?php echo $_SESSION['refbonus'];?> USD</h4>
+													<sapn class="btn btn-success">Claim Bonus</span>
+													<span class="btn btn-danger">Unclaim Bonus</span>
+
 												</div>
 											</div>
 										</div>
@@ -246,15 +249,11 @@ include "header.php";
 								</div>
 							</div>
 							
+
               </div>
               
-              
-        
-     
-
-
-            
-            
+			  <p><a href="deposit.php" class="btn btn-success">Invest</a></p>	
+						<p><a href="deposit.php" class="btn btn-success">Re-Invest</a></p>
             
 		 <?php
 		 

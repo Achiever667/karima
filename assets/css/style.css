@@ -522,7 +522,7 @@ section {
   padding: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to top, rgb(67, 9, 67) , rgba(233, 166, 224, 0.55)), url("../img/hero-bg.png") ;
+  /* background: linear-gradient(to top, rgb(67, 9, 67) , rgba(10, 2, 9, 0.55)), url("../img/hero-bg.png") ; */
   filter: contrast(200%);
     background-size: cover;
 }
@@ -572,8 +572,9 @@ section {
 .hero .hero-img {
   text-align: right;
 }
-.carousel-item{
+.hero .carousel-item{
     padding-top: 250px;
+    width: 100%;
     height: 100vh;
 
 }

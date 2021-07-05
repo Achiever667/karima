@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <?php
 require_once "../../config/db.php";function redirect(){
 	header("Location: signin.php");
@@ -30,3 +32,4 @@ if(!isset($_GET['email']) || !isset($_GET['token'])){
 
 
 ?>
+                        <?php ob_end_flush();?>

@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <?php
 session_start();
 
@@ -159,6 +161,7 @@ function test_input($data) {
 										
 						    </div>
 						</div>
+						<?php ob_end_flush();?>
 
 
 <!-- js -->

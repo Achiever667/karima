@@ -8,7 +8,10 @@ define('DB_PASSWORD', '');
 define('DB_NAME', 'investment');
  
 
-
+// define('DB_SERVER', 'localhost:3306');
+// define('DB_USERNAME', 'keneticc_keneticcinvest');
+// define('DB_PASSWORD', 'Umunneochi1.2');
+// define('DB_NAME', 'keneticc_keneticinvestment');
 
 
 // define('DB_SERVER', 'db4free.net:3306/investment__pro');

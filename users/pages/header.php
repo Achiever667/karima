@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title><?php echo $title ;?></title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
@@ -39,7 +41,8 @@
 				
 				<a href="index.php" class="logo">
 				
-					<img src="https://<?php echo $bankurl;?>/admin/c2wad/logo/<?php echo $logo;?>" alt="navbar brand" class="navbar-brand" style="height:40px;width:100px; margin-top:7px; border-radius:5%">
+					<img src="<?php  echo "Kenetic-Logo-White-1.svg
+";?>" alt="navbar brand" class="navbar-brand bg-dark ml-auto" style="height:40px;width:100px; margin-top:7px; border-radius:5%">
 					
 				</a> 
 				

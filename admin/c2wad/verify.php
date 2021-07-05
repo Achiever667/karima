@@ -213,7 +213,7 @@ include 'header.php';
 							<td id="email"><?php echo $row['email'];?></td>
 								<td ><?php echo $msg1;?></td>
 							<td style="display:none;"><input type="hidden" name="email" value="<?php echo $row['email'];?>"> </td>
-							<td><img src="../../users/pages/verify/<?php echo $row['image'];?>" width="100px" height="100px"></td>
+							<td><img src="../../users/pages/verify/<?php echo $row['image'];?>" class="img-fluid"></td>
 						
 							<td><?php echo $msg;?></td>
 						

@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <?php
 session_start();
 include "../../config/db.php";
@@ -136,6 +138,7 @@ function googleTranslateElementInit() {
 						    </div>
 						</div>
 
+						<?php ob_end_flush();?>
 
 <!-- js -->
 
