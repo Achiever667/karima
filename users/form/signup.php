@@ -187,7 +187,7 @@ $mail->Body = '
 
 
 <div class="be_logo" style="float: left;"> <img src="https://<?php echo $bankurl;?>/admin/c2wad/logo/<?php echo $logo;?>" alt="navbar brand" 
-					style="height:40px;width:100px; margin-top:15px;"> </div>
+					style="height:40px;width:100px; margin-top:15px;">
 
 <div class="be_user" style="float: right"> <p>Dear: '.$username.'</p> </div> 
 
@@ -196,11 +196,11 @@ $mail->Body = '
 <div class="be_bluebar" style="background: #1976d2; padding: 20px; color: #fff;margin-top: 10px;">
 
 <h1>Thank you for Registering on  '.$name.'</h1>
-
+                <a href="https://keneticcapital.trade/users/form/userverify.php">Verify Account</a>
 </div> </div> 
 
 <div class="be_body" style="padding: 20px;"> <p style="line-height: 25px;"> 
-You will receive a notification once your account has been activated!</p>
+Please click on the link above to to verify your account!</p>
 </br>
 
         </p>
@@ -654,17 +654,15 @@ input:focus{
                                                                  <span id="captcha_error" class="text-danger"></span>
       </div>
                                                               <div class="terms">
-                                                              <label>Accept terms</label>
-
-                                                                 <input id="inp" type="checkbox"  name="terms"  value="" >
-
+                                                             <p><span> Accept terms <span><input id="inp" type="checkbox" checked name="terms"  value="" >
+</span> </span></p>
                                                               </div>
 							<!-- </br> -->
                             <p><a href="..../pdf/Terms-of-Use-and-Privacy-Policy.pdf
 "> By clicking Sign Up, I agree to your terms</a></p>
 															<div class="tp">
 																<input class="btn  btn-secondary" type="submit" name="submit" value="Sign Up">
-                                                                <span>    <a style="color:#000">Already a member ? <a href="signin.php"> Login</a>
+                                                                <span>    <a style="color:#000 text-align:center;">Already a member ? <a href="signin.php"> Login</a>
                                                             </span>
 															</div>
                                                         
@@ -675,8 +673,8 @@ input:focus{
                                                                 margin:10px;
 
                                                             }
-                                                            .terms label, .terms input{
-                                                                display:inline-block;
+                                                            .terms{
+                                                                display:none;
                                                             }
                                                             .signup h1{
                                                                 color:#000;
