@@ -247,7 +247,7 @@ else
 
 ?> 
 
-<div id="google_translate_element" style="margin-left:1%">
+<div id="google_translate_element" style="margin-left:-6%; position:absolute; z-index:999;">
 
 </div><script type="text/javascript">
 function googleTranslateElementInit() {
@@ -293,7 +293,8 @@ input:focus{
     border-bottom: 1px solid purple;
 }
 .registration{
-	background:#fff;
+    background: linear-gradient(to top, rgb(67, 9, 67) , rgba(10, 2, 9, 0.55)), url("features-3.png") ;
+	background-size:cover;
     width:40%;
 	padding:20px;
     margin:auto;
@@ -318,7 +319,6 @@ input:focus{
     border-bottom: 1px solid purple;
 }
 .registration{
-	background:#fff;
     width:100%;
 	padding:20px;
     margin:auto;
@@ -335,9 +335,9 @@ input:focus{
 						<div class="">
 							<!-- /signup -->
 							   <div class="signup m-4 text-left shadow ">
-                                   <h1 class="p-3 text-secondary">Sign Up </h1>
+                                   <!-- <h1 class="p-3 text-secondary">Sign Up </h1> -->
 								<div class="registration">
-								
+								<h2 style="color: #fff; padding:10px; background:transparent; margin:10px; position:sticky; top:0; z-index:999;"><img src="Kenetic-Logo-White-1.svg" alt=""> Sign Up</h2>
 												<!-- <div id="den" class="signin-form profile"  style="margin-top:50px;background-color:#220a80"> -->
 												    
 												   

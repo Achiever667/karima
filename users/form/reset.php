@@ -127,13 +127,13 @@ function test_input($data) {
 
 
 ?>
-<div id="google_translate_element"></div>
+<div id="google_translate_element" style="margin-left:-6%; position:absolute; z-index:999; top: 0;">
 
-<script type="text/javascript">
+</div><script type="text/javascript">
 function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
 }
-</script> 
+</script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
@@ -175,21 +175,50 @@ function googleTranslateElementInit() {
 			
 <style>
 
- input{
-padding:20px;
+input{
+padding:15px;
+width:100%;
 margin:10px;
-border-radius:50px;
+border:none;
+border-bottom: 1px solid #000;
+border-radius:10px;
+text-align:left;
+outline-style:none;
+outline-color:none;	
+outline:none;
+	}
+.registration{
+	background: linear-gradient(to top, rgb(67, 9, 67) , rgba(10, 2, 9, 0.55)), url("features-3.png") ;
+	background-size:cover;
+	    width:40%;
+	padding:20px;
+    margin:auto;
+    box-shadow:0.4px 4px 4px 0.2px #000fff;
+}
+
+@media(max-width:900px) {
+
+    input{
+padding:15px;
+width:100%;
+margin:10px;
+border:none;
+border-bottom: 1px solid #000;
+border-radius:10px;
 text-align:left;
 outline-style:none;
 outline-color:none;	
 outline:none;
 }
-
+input:focus{
+    border-bottom: 1px solid purple;
+}
 .registration{
-	background:#fff;
+    width:100%;
 	padding:20px;
-    margin:10px;
+    margin:auto;
     box-shadow:0.4px 4px 4px 0.2px #000fff;
+}
 }
 </style>
 						<div class="">
@@ -199,8 +228,8 @@ outline:none;
 								
 												<!-- <div id="den" class="signin-form profile">
 													<h2 style="color:#fff;font-family:Comic Sans MS;">Password Reset</h2> -->
-													<h2 style="color: #000; padding:10px; background:#fff; margin:10px; position:sticky; top:0;">Password reset</h2>
-
+													<h2 style="color: #fff; padding:10px; background:transparent; margin:10px; position:sticky; top:0;"><img src="Kenetic-Logo-White-1.svg" alt=""> Password reset</h2>
+													
 													<?php if($msg != "") echo "<div style='padding:20px;background-color:#dce8f7;color:black'> $msg</div class='btn btn-success'>" ."</br></br>";  ?>
 
 													<div class="login-form">
@@ -218,12 +247,12 @@ outline:none;
 																
 							</br>
 															<div class="tp">
-																<input type="submit" name="submit" value="Reset">
+																<input style="background-color:purple; color:#fff; text-align:center;" type="submit" name="submit" value="Reset">
 															</div>
 														</form>
 													</div>
 													
-																						 <h6>Back to login &nbsp; <a href="signin.php"> LOGIN</a><h6>
+																						 <h6 style="color:#fff; text-align:center;">Back to login &nbsp; <a href="signin.php"> LOGIN</a><h6>
 												</div>
 										</div>
 										<!--copy rights start here-->

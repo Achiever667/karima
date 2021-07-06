@@ -208,7 +208,7 @@ function test_input($data) {
 ?>
 
 
-<div id="google_translate_element" style="margin-left:1%">
+<div id="google_translate_element" style="margin-left:-6%; position:absolute; z-index:999;">
 
 </div><script type="text/javascript">
 function googleTranslateElementInit() {
@@ -222,7 +222,7 @@ function googleTranslateElementInit() {
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-<title>Crypto investment</title>
+<title>Kenetic Capital || Sign In</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -243,21 +243,49 @@ function googleTranslateElementInit() {
 <body>
 			
 <style>
-input{
-	padding:20px;
+    input{
+padding:15px;
+width:100%;
 margin:10px;
-border-radius:50px;
+border:none;
+border-bottom: 1px solid #000;
+border-radius:10px;
+text-align:left;
+outline-style:none;
+outline-color:none;	
+outline:none;
+	}
+.registration{
+	background: linear-gradient(to top, rgb(67, 9, 67) , rgba(10, 2, 9, 0.55)), url("features-3.png") ;
+	background-size:cover;
+	    width:40%;
+	padding:20px;
+    margin:auto;
+    box-shadow:0.4px 4px 4px 0.2px #000fff;
+}
+
+@media(max-width:900px) {
+input{
+padding:15px;
+width:100%;
+margin:10px;
+border:none;
+border-bottom: 1px solid #000;
+border-radius:10px;
 text-align:left;
 outline-style:none;
 outline-color:none;	
 outline:none;
 }
-
+input:focus{
+    border-bottom: 1px solid purple;
+}
 .registration{
-	background:#fff;
+    width:100%;
 	padding:20px;
-    margin:10px;
+    margin:auto;
     box-shadow:0.4px 4px 4px 0.2px #000fff;
+}
 }
 </style>
 						<div class="">
@@ -266,7 +294,7 @@ outline:none;
 								    <div class="registration shadow">
 					
 			
-													<h2 style="color: #000; padding:10px; background:#fff; margin:10px; position:sticky; top:0;">Login</h2>
+													<h2 style="color: #fff; padding:10px; background:transparent; margin:10px; position:sticky; top:0;"><img src="Kenetic-Logo-White-1.svg" alt=""> Login</h2>
 
 													<?php if($msg != "") echo "<div style='padding:20px;background-color:#dce8f7;color:black'> $msg</div class='btn btn-success'>" ."</br></br>";  ?>
 
@@ -287,8 +315,8 @@ outline:none;
 																
 							</br>
 															<div class="tpj">
-																<input type="submit" style="background-color:#abb4f7" name="submit" value="Sign In">
-																<span style="color:#000">Not  a member ? &nbsp; <a href="signup.php" > Sign Up</a></span>
+																<input type="submit" style="background-color:purple; color:#fff; text-align:center;" name="submit" value="Sign In">
+																<span style="color:#fff">Not  a member ? &nbsp; <a href="signup.php" > Sign Up</a></span>
 															</div>
 														</form>
 													</div>
