@@ -497,9 +497,9 @@ include "header.php";
             
             <div class="box-body bg-transparent" style="margin-left:5%">
 
-            <p type="button" class="btn btn-light shadow" style="width:auto; font-size:20px;padding:40px 10px; color: #000; " >
+            <p type="button" class="btn btn-light shadow" style="width:100%; font-size:20px;padding:40px 10px; color: #000; " >
 
-                <b> <i class="fas fa-th-list" id="icone"  ></i> Balance: <?php echo round($row['walletbalance'],2);?> USD</b>
+                <b> <i class="fas fa-th-list" id="icone"  ></i> Balance: <br> <?php echo round($row['walletbalance'],2);?> USD</b>
 
               </p>
               </br> </br></br>

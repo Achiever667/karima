@@ -247,7 +247,7 @@ out.value=output;
           <div class="">
                    <a href="deposit.php?username=<?php  echo $_SESSION['username']?>&email= <?php  echo $_SESSION['email']?>&sessions= <?php  echo $_SESSION['session']?>"><button type="button" class="btn btn-primary btn-flat">Bitcoin Payment</button></a> 
                   </br></br>
-                  <a href="pm.php?username=<?php  echo $_SESSION['username']?>&email= <?php  echo $_SESSION['email']?>&sessions= <?php  echo $_SESSION['session']?>"><button type="button" class="btn btn-primary btn-flat">Perfect Money Payment</button></a>
+                  <a href="pm.php?username=<?php  echo $_SESSION['username']?>&email= <?php  echo $_SESSION['email']?>&sessions= <?php  echo $_SESSION['session']?>"><button type="button" class="btn btn-primary btn-flat">Dodge Coin Payment</button></a>
                   
                    
                   
@@ -271,12 +271,12 @@ out.value=output;
 }
 }
           ?>
-          <input type="text" class="form-control" value="<?php echo $bw ;?>" id="myInput" readonly>
-          </br>
-<button onclick="myFunction()" class="btn btn-info">Copy Ethereum Address</button>
+          <input type="text" style='position:absolute;' class="form-control" value="<?php echo $bw ;?>" id="ethad" >
+          <!-- </br> -->
+<button onclick="myFunction()" style='position:relative; z-index:999; right:0;'  class="btn btn-info">Copy  Address</button>
 <script>
 function myFunction() {
-  var copyText = document.getElementById("myInput");
+  var copyText = document.getElementById("ethad").value;
   copyText.select();
   document.execCommand("copy");
   alert("Copied the wallet address: " + copyText.value);

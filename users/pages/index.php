@@ -167,11 +167,7 @@ include "header.php";
 }
   </script>
 </div>
-
-
-               
-              
-            </div>
+ </div>
 
 
 
@@ -182,7 +178,7 @@ include "header.php";
 					<div class="page-inner " style="margin-top:10px">
 						<div class="row row-card-no-pd mt--2">
 							<div class="col-sm-6 col-md-4  " >
-								<div class="card card-stats card-round bg-light shadow">
+								<div class="card card-stats card-round bg-light shadow mb-3">
 									<div class="card-body ">
 										<div class="row">
 											<div class="col-5">
@@ -204,7 +200,7 @@ include "header.php";
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
-								<div class="card card-stats card-round bg-light shadow">
+								<div class="card card-stats card-round bg-light shadow mb-3">
 									<div class="card-body ">
 										<div class="row">
 											<div class="col-5">
@@ -212,7 +208,7 @@ include "header.php";
 													<i class="flaticon-coins " style="color:#000"></i>
 												</div>
 											</div>
-											<div class="col-7 col-stats p-4">
+											<div class="col-7 col-stats p-4 mb-3">
 												<div class="numbers">
 													<p class="card-category" style="color:#000">Total Balance</p>
 													<h4 class="card-title" style="color:#000">$<?php echo round($_SESSION['walletbalance'],2) + round($_SESSION['profit'],2);?> USD</h4>
@@ -231,7 +227,7 @@ include "header.php";
 													<i class="flaticon-error" style="color:#000"></i>
 												</div>
 											</div>
-											<div class="col-7 col-stats p-4">
+											<div class="col-7 col-stats p-4 mb-3">
 												<div class="numbers">
 
 
@@ -240,7 +236,7 @@ include "header.php";
 													<p class="card-category" style="color:#000">Referral Bonus</p>
 													<h4 class="card-title" style="color:#000">	$<?php echo $_SESSION['refbonus'];?> USD</h4>
 													<sapn class="btn btn-success">Claim Bonus</span>
-													<span class="btn btn-danger">Unclaim Bonus</span>
+													<!-- <span class="btn btn-danger">Unclaim Bonus</span> -->
 
 												</div>
 											</div>

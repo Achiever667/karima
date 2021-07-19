@@ -76,11 +76,11 @@ include "header.php";
 
    
 
-<div class="panel-header bg-primary-gradient">
+<div class="panel-header bg-transparent text-dark shadow">
 						<div class="page-inner py-5">
 							<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 								<div>
-									<h2 class="text-white pb-2 fw-bold">My Ticket</h2>
+									<h2 class="text-dark pb-2 fw-bold">My Ticket</h2>
 
 
 
@@ -89,7 +89,7 @@ include "header.php";
 
 
                   
-									<h5 style="color:#fff" class="text-white op-7 mb-2"><marquee style="color:#fff" width="50%" >Thanks for investing in <?php  echo $name;?> have a nice day!</marquee></h5>
+									<h5 style="color:#000" class="text-white op-7 mb-2"><marquee style="color:#000" width="50%" >Thanks for investing in <?php  echo $name;?> have a nice day!</marquee></h5>
 								</div>
 								</br>
 
@@ -98,7 +98,6 @@ include "header.php";
 
 								<div class="ml-md-auto py-2 py-md-0">
 									
- <input type="text" id="myInput" style="width:70%; padding:4px; border-radius:5%;" value="https://<?php echo $bankurl;?>/users/form/signup.php?refcode=<?php echo $_SESSION['refcode'];?>" readonly="true"/><button class="btn btn-secondary" onclick="myFunction()">Click to copy Referral link</button>
 								</div>
 							</div>
 						</div>

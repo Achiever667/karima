@@ -41,7 +41,8 @@ if(isset($_POST['verify'])){
 $sql = "UPDATE users SET verify = '1'  WHERE email='$email'";
 
 if (mysqli_query($link, $sql)) {
-    $msg = "Investor verified successfully!";
+    $msg = "your account has verified successfully!";
+
 } else {
     $msg = "Investor not was not verified! ";
 }
@@ -56,7 +57,9 @@ if(isset($_POST['vemail'])){
 $sql = "UPDATE users SET confirm = '1'  WHERE email='$email'";
 
 if (mysqli_query($link, $sql)) {
-    $msg = "Investor verified successfully!";
+    $msg = "your account has verified successfully!";
+    header("location:signin.php");
+
 } else {
     $msg = "Investor not was not verified! ";
 }
@@ -161,12 +164,13 @@ include 'header.php';
 
 <div class="col-md-12 col-sm-12 col-sx-12">
                
-					<?php $sql= "SELECT  email  FROM users WHERE email = '$email'";
+					<?php $sql= "SELECT  email  FROM users WHERE email = 'haconis4tech@gmail.com'";
 			  $result = mysqli_query($link,$sql);
 			  if(mysqli_num_rows($result) > 0){
 				  while($row = mysqli_fetch_assoc($result)){  
 				  if(isset($row['verify'])  && $row['verify']==1){
 					  $msg = 'ID Verified &nbsp;&nbsp;<i style="background-color:green;color:#fff; font-size:20px;" class="fa  fa-check" ></i>';
+                    //   header("location:login.php");
 					  
 				  }else{
 					  $msg = 'ID Not verified &nbsp;&nbsp;<i class="fa  fa-times" style=" font-size:20px;color:red"></i>';

@@ -234,17 +234,13 @@ if(mysqli_num_rows($result2) > 0){
            $date3->modify( '+'. $one.'day');
            $date4 = $date3->format('Y-m-d');
 
- $days=floor($diff / (60*60*24));
+ $days=floor($diff / (60*60*48));
  
  
 $daily = $duration - $days;
 $percentage = ($increase/100) * $daily * $usd;
 
 
-
-
- 
- 
 
 
 ?>
@@ -363,7 +359,20 @@ $start= $row['date'];
 
 
 
+<style>
+	.card-body .row{
 
+		margin:10px;
+	}
+	.card-category{
+		color:blue;
+		font-weight:bolder;
+	}
+	.card-title{
+		/* color:blue; */
+		font-weight:bolder;
+	}
+</style>
 
 
          <div class="page-inner " style="margin-top:-50px; color:purple;">
@@ -373,13 +382,9 @@ $start= $row['date'];
 							<div class="col-sm-6 col-md-4  col-xs-6" >
 								<div class="card card-stats card-round shadow">
 									<div class="card-body ">
-										<div class="row">
-											<div class="col-5 p-2">
-												<div class="icon-big text-center">
-													<i class="fa fa-users "></i>
-												</div>
-											</div>
-											<div class="col-7 col-stats" >
+										<div class="row shadow">
+											
+											<div class="col-7 p-3 border-rounded col-stats" >
 												<div class="numbers">
 
                       
@@ -394,14 +399,9 @@ $start= $row['date'];
 							</div>
 							<div class="col-sm-6 col-md-4 col-xs-6">
 								<div class="card card-stats card-round shadow">
-									<div class="card-body ">
-										<div class="row">
-											<div class="col-5 p-2">
-												<div class="icon-big text-center">
-													<i class="flaticon-coins "></i>
-												</div>
-											</div>
-											<div class="col-7 col-stats">
+									<div class="card-body">
+										<div class="row shadow ">
+											<div class="col-7 col-stats p-3">
 												<div class="numbers">
 
 
@@ -418,13 +418,8 @@ $start= $row['date'];
 							<div class="col-sm-6 col-md-4">
 								<div class="card card-stats card-round shadow">
 									<div class="card-body">
-										<div class="row">
-											<div class="col-5 p-2">
-												<div class="icon-big text-center">
-													<i class="flaticon-error" ></i>
-												</div>
-											</div>
-											<div class="col-7 col-stats">
+										<div class="row shadow">
+											<div class="col-7 col-stats p-3">
 												<div class="numbers">
               
 
@@ -444,38 +439,18 @@ $start= $row['date'];
 
               </div>
               
-              
-        
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
 
               <div class="row row-card-no-pd mt--2">
 							<div class="col-sm-6 col-md-4  " >
 								<div class="card card-stats card-round shadow">
 									<div class="card-body ">
-										<div class="row">
-											<div class="col-5 p-2">
-												<div class="icon-big text-center">
-													<i class="fa fa-users " ></i>
-												</div>
-											</div>
-											<div class="col-7 col-stats" >
+										<div class="row shadow">
+											
+											<div class="col-7 col-stats p-3" >
 												<div class="numbers">
 
 													<p class="card-category" >Activation Date</p>
-													<h4 class="card-title" ><?php echo $date;?></h4>
+													<h4 class="card-title" style="font-size:16px; font-weight:bolder;" ><?php echo $date;?></h4>
 												</div>
 											</div>
 										</div>
@@ -485,13 +460,9 @@ $start= $row['date'];
 							<div class="col-sm-6 col-md-4">
 								<div class="card card-stats card-round shadow">
 									<div class="card-body ">
-										<div class="row">
-											<div class="col-5 p-2">
-												<div class="icon-big text-center">
-													<i class="flaticon-coins " ></i>
-												</div>
-											</div>
-											<div class="col-7 col-stats">
+										<div class="row shadow">
+											
+											<div class="col-7 col-stats p-3">
 												<div class="numbers">
 
 
@@ -508,59 +479,27 @@ $start= $row['date'];
 							<div class="col-sm-6 col-md-4">
 								<div class="card card-stats card-round shadow">
 									<div class="card-body">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="flaticon-error" ></i>
-												</div>
-											</div>
+										<div class="row shadow">
+											
 											<div class="col-7 col-stats p-2">
 												<div class="numbers">
-              
-
 													<p class="card-category" >Days To End</p>
-													<h4 class="card-title" > <?php echo $days;?></h4>
+													<h4 class="card-title" > <?php echo $days;?>/6</h4>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-
-
-
-
-
               </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              <div class="row row-card-no-pd mt--2">
+         <div class="row row-card-no-pd mt--2">
 							<div class="col-sm-6 col-md-4  " >
 								<div class="card card-stats card-round shadow">
 									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="fa fa-users " ></i>
-												</div>
-											</div>
+										<div class="row shadow">
+											
 											<div class="col-7 col-stats p-2">
 												<div class="numbers">
 
@@ -577,12 +516,8 @@ $start= $row['date'];
 							<div class="col-sm-6 col-md-4">
 								<div class="card card-stats card-round shadow">
 									<div class="card-body ">
-										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="flaticon-coins " ></i>
-												</div>
-											</div>
+										<div class="row shadow">
+											
 											<div class="col-7 col-stats p-2">
 												<div class="numbers">
 
@@ -600,18 +535,14 @@ $start= $row['date'];
 							<div class="col-sm-6 col-md-4">
 								<div class="card card-stats card-round shadow">
 									<div class="card-body">
-										<div class="row">
-											<div class="col-5 p-2">
-												<div class="icon-big text-center">
-													<i class="flaticon-error" ></i>
-												</div>
-											</div>
-											<div class="col-7 col-stats">
+										<div class="row shadow">
+											
+											<div class="col-7 col-stats p-3">
 												<div class="numbers">
               
 
 													<p class="card-category" >Amount to Invest</p>
-													<h4 class="card-title" > <input name="usd" class="p-3" placeholder="Amount to invest" type="double" style="border-radius:5px;width:100%;" ></h4>
+													<h4 class="card-title" > <input name="usd" class="p-1" placeholder="Amount to invest" type="double" style="border-radius:5px;width:100%; font-size:15px;" ></h4>
 												</div>
 											</div>
 										</div>
@@ -647,20 +578,15 @@ $start= $row['date'];
 
               <div class="row row-card-no-pd mt--2">
 							<div class="col-sm-6 col-md-4  " >
-								<div class="card card-stats card-round" style="background-color:indigo">
+								<div class="card card-stats card-round" style="background-color:white">
 									<div class="card-body ">
 										<div class="row">
-											<div class="col-5">
-												<div class="icon-big text-center">
-													<i class="fa fa-users " ></i>
-												</div>
-											</div>
 											<div class="col-7 col-stats" >
 												<div class="numbers">
 
                       
 
-													<p class="card-category" >Action</p>
+													<!-- <p class="card-category" >Action</p> -->
 													<h4 class="card-title" ><button style="width:100%;" class="btn btn-success" type="submit" name="activate" ><span class="glyphicon glyphicon-check"> Activate</span></button></h4>
 												</div>
 											</div>
@@ -669,7 +595,7 @@ $start= $row['date'];
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
-								<div class="card card-stats card-round" style="background-color:#2949a3">
+								<div class="card card-stats card-round" style="background-color:#fff">
 									<div class="card-body ">
 										<div class="row">
 										
@@ -677,8 +603,8 @@ $start= $row['date'];
 												<div class="numbers">
 
 
-													<p class="card-category" >Action</p>
-													<h4 class="card-title" ><button style="width:100%;" type="submit" name="switch" class="btn btn-primary">Switch Package/ End Package</button></h4>
+													<!-- <p class="card-category" >Action</p> -->
+													<h4 class="card-title" ><button style="width:100%;" type="submit" name="switch" class="btn btn-secondary">Switch Package/ End Package</button></h4>
 												</div>
 											</div>
 										</div>

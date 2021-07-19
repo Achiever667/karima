@@ -131,7 +131,7 @@ include "header.php";
 						<div class="page-inner py-5">
 							<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 								<div>
-									<h2 class="text-dark pb-2 fw-bold">Invest</h2>
+									<h2 class="text-dark pb-2 fw-bold"> Bitcoin Payment Process</h2>
 
 
 
@@ -262,7 +262,7 @@ out.value=output;
 
 <?php 
 
-    echo '<img src="code/index.php"  style="width:200px;"/>';
+    // echo '<img src="code/index.php"  style="width:200px;"/>';
  echo $percentage;
 ?>
 

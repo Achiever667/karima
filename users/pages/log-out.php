@@ -8,7 +8,8 @@ $sql = "UPDATE users SET session='0' WHERE email='$email'";
 
 	  mysqli_query($link, $sql) or die(mysqli_error($link));
 
-	  header("location:../form/signin.php");
+	//   header("location:");
+	echo "<script>window.location.href='index.html';</script>";
 }
 exit();
 ?>

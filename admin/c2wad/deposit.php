@@ -29,7 +29,7 @@ if(isset($_POST['approve'])){
 	
 	$tnx = $_POST['tnx'];
 	$usd = $_POST['usd'];
-	$email = $_POST['email'];
+	// $email = $_POST['email'];
 	
 
 		$sql1 = "UPDATE users SET walletbalance = walletbalance + $usd  WHERE email='$email'";

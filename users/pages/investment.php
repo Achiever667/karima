@@ -340,15 +340,11 @@ include "header.php";
 
 
 <div class="row row-card-no-pd mt--2">
-  <div class="col-sm-6 col-md-4  col-xs-6" >
-    <div class="card card-stats card-round" style="background-color:purple">
+  <div class="col-sm-6 col-md-4  col-xs-6 shadow" >
+    <div class="card card-stats card-round" style="background-color:transparent">
       <div class="card-body ">
         <div class="row">
-          <div class="col-5">
-            <div class="icon-big text-center">
-              <i class="fa fa-users " style="color:#fff"></i>
-            </div>
-          </div>
+         
           <div class="col-7 col-stats" >
             <div class="numbers">
 
@@ -364,7 +360,7 @@ include "header.php";
 				  ?>
 
 <form action="investment.php?email=<?php  echo $_SESSION['email'];?>" method="POST">
-       <h4 style="color:#fff"><?php echo $row['pname'];?></h4>
+       <h4 style="color:#000"><?php echo $row['pname'];?></h4>
        <?php
     $currentDateTime = date('Y-m-d H:i:s');
     
@@ -377,16 +373,16 @@ include "header.php";
        <input type="hidden" name="duration" value=" <?php echo $row['duration'];?>">
       </h4>
       <div class="plan-cost"><span class="plan-price">
-            <i class="fa fa-check" style="color:#fff"> </i><span style="color:#fff"> $<?php echo $row['froms'];?>- $<?php echo $row['tos'];?> </span> </br>
-            <i class="fa fa-check" style="color:#fff"> </i><span style="color:#fff" class="plan-type"><?php echo $row['duration'];?> Days Investment</span></div>
+            <i class="fa fa-check" style="color:#000"> </i><span style="color:#000"> $<?php echo $row['froms'];?>- $<?php echo $row['tos'];?> </span> </br>
+            <i class="fa fa-check" style="color:#000"> </i><span style="color:#000" class="plan-type"><?php echo $row['duration'];?> Days Investment</span></div>
     </header>
    
-   <i class="fa fa-check" style="color:#fff"> </i><span style="color:#fff">  Plus $<?php echo $row['bonus'];?> Activation bonus</br>
-      <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> Fast Activation</br>
-      <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> <?php echo $row['increase'];?>% Profit Daily</br>
+   <i class="fa fa-check" style="color:#000"> </i><span style="color:#000">  Plus $<?php echo $row['bonus'];?> Activation bonus</br>
+      <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> Fast Activation</br>
+      <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> <?php echo $row['increase'];?>% Profit Daily</br>
       
    </br>
-    <div class="plan-select"><button type="submit" class="btn btn-danger" name="p1">Select Plan</button></div>
+    <div class="plan-select"><button type="submit" class="btn btn-secondary" name="p1">Select Plan</button></div>
   </div>
 
 </form>
@@ -408,15 +404,12 @@ include "header.php";
 
 
 
-  <div class="col-sm-6 col-md-4 col-xs-6">
-    <div class="card card-stats card-round" style="background-color:#2949a3">
+  <div class="col-sm-6 col-md-4 col-xs-6 shadow">
+    <div class="card card-stats card-round" style="background-color:transparent">
       <div class="card-body ">
         <div class="row">
-          <div class="col-5">
-            <div class="icon-big text-center">
-              <i class="flaticon-coins " style="color:#fff"></i>
-            </div>
-          </div>
+         
+          <!-- </div> -->
           <div class="col-7 col-stats">
             <div class="numbers">
 
@@ -430,7 +423,7 @@ include "header.php";
 				  ?>
 
 <form action="investment.php?email=<?php  echo $_SESSION['email'];?>" method="POST">
-<h4 style="color:#fff"><?php echo $row['pname'];?></h4>
+<h4 style="color: #000;"><?php echo $row['pname'];?></h4>
        <?php
     $currentDateTime = date('Y-m-d H:i:s');
     
@@ -443,16 +436,16 @@ include "header.php";
        <input type="hidden" name="duration" value=" <?php echo $row['duration'];?>">
       </h4>
       <div class="plan-cost"><span class="plan-price">
-            <i class="fa fa-check" style="color:#fff"> </i><span style="color:#fff"> $<?php echo $row['froms'];?>- $<?php echo $row['tos'];?> </span> </br>
-            <i class="fa fa-check" style="color:#fff"> </i><span style="color:#fff" class="plan-type"><?php echo $row['duration'];?> Days Investment</span></div>
+            <i class="fa fa-check" style="color:#000"> </i><span style="color:#000"> $<?php echo $row['froms'];?>- $<?php echo $row['tos'];?> </span> </br>
+            <i class="fa fa-check" style="color:#000"> </i><span style="color:#000" class="plan-type"><?php echo $row['duration'];?> Days Investment</span></div>
     </header>
    
-   <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> Plus $<?php echo $row['bonus'];?> Activation bonus</br>
-      <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> Fast Activation</br>
-      <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> <?php echo $row['increase'];?>% Profit Daily</br>
+   <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> Plus $<?php echo $row['bonus'];?> Activation bonus</br>
+      <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> Fast Activation</br>
+      <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> <?php echo $row['increase'];?>% Profit Daily</br>
       
    </br>
-    <div class="plan-select"><button type="submit" class="btn btn-danger" name="p2">Select Plan</button></div>
+    <div class="plan-select"><button type="submit" class="btn btn-secondary" name="p2">Select Plan</button></div>
   </div>
 </div>
 </form>
@@ -471,15 +464,11 @@ include "header.php";
    
 
 
-  <div class="col-sm-6 col-md-4">
-    <div class="card card-stats card-round" style="background-color:purple">
+  <div class="col-sm-6 col-md-4 shadow">
+    <div class="card card-stats card-round" style="background-color:transparent">
       <div class="card-body">
         <div class="row">
-          <div class="col-5">
-            <div class="icon-big text-center">
-              <i class="flaticon-settings" style="color:#fff"></i>
-            </div>
-          </div>
+         
           <div class="col-7 col-stats">
             <div class="numbers">
   
@@ -493,7 +482,7 @@ include "header.php";
 				  ?>
         
 <form action="investment.php?email=<?php  echo $_SESSION['email'];?>" method="POST">
-<h4 style="color:#fff"><?php echo $row['pname'];?></h4>
+<h4 style="color:#000"><?php echo $row['pname'];?></h4>
        <?php
     $currentDateTime = date('Y-m-d H:i:s');
     
@@ -506,16 +495,16 @@ include "header.php";
        <input type="hidden" name="duration" value=" <?php echo $row['duration'];?>">
       </h4>
       <div class="plan-cost"><span class="plan-price">
-            <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> $<?php echo $row['froms'];?>- $<?php echo $row['tos'];?> </span> </br>
-            <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff" class="plan-type"><?php echo $row['duration'];?> Days Investment</span></div>
+            <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> $<?php echo $row['froms'];?>- $<?php echo $row['tos'];?> </span> </br>
+            <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000" class="plan-type"><?php echo $row['duration'];?> Days Investment</span></div>
     </header>
    
-   <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> Plus $<?php echo $row['bonus'];?> Activation bonus</br>
-      <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> Fast Activation</br>
-      <i class="fa fa-check" style="color:#fff"> </i> <span style="color:#fff"> <?php echo $row['increase'];?>% Profit Daily</br>
+   <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> Plus $<?php echo $row['bonus'];?> Activation bonus</br>
+      <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> Fast Activation</br>
+      <i class="fa fa-check" style="color:#000"> </i> <span style="color:#000"> <?php echo $row['increase'];?>% Profit Daily</br>
       
    </br>
-    <div class="plan-select"><button type="submit" class="btn btn-danger" name="p3">Select Plan</button></div>
+    <div class="plan-select"><button type="submit" class="btn btn-secondary" name="p3">Select Plan</button></div>
   </div>
 
 </form>

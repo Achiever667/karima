@@ -85,7 +85,7 @@ if (mysqli_query($link, $sql)) {
 
 <div class="be_body" style="padding: 20px;"> <p style="line-height: 25px;"> 
 
-Your order of '.$usd.' USD worth of '.$pm.'  PM has been sent, your transaction ID is '.$tnx.' , you  will be credited once your order is confirmed.
+Your order of '.$usd.' USD worth of '.$pm.'  Dodge coin has been sent, your transaction ID is '.$tnx.' , you  will be credited once your order is confirmed.
 
 
 </p>
@@ -104,7 +104,7 @@ Copyright ©2019 '.$name.'. </p> <div class="be_logo" style=" width:60px;height:
 ';
   if($mail->send()){
 
-    $msg= " Your order of $usd USD worth of $pm  PM has been sent, your transaction ID is $tnx , you  will be credited once your order is confirmed ";
+    $msg= " Your order of $usd USD worth of $pm  Dodge coin has been sent, your transaction ID is $tnx , you  will be credited once your order is confirmed ";
   }
 
 
@@ -233,7 +233,7 @@ out.value=output;
           <div class="box box-default">
             <div class="box-header with-border">
 
-          <h4 align="center"><i class="fa fa-refresh"></i> <?php echo $name;?>   Perfect Money Payment Process</h4>
+          <h4 align="center"><i class="fa fa-refresh"></i> <?php echo $name;?>   Dodge Coin Payment Process</h4>
 </br>
 
           <div class="">
@@ -248,7 +248,7 @@ out.value=output;
 
  
           <hr></hr>
-           <h5>Make payment to the below Perfect Money ID</h5>
+           <h5>Make payment to the below Dodge Address</h5>
           
             <?php   
         $sql1= "SELECT * FROM admin";
@@ -265,7 +265,7 @@ out.value=output;
           ?>
           <input type="text" class="form-control" value="<?php echo $bw ;?>" id="myInput" readonly>
           </br>
-<button onclick="myFunction()" class="btn btn-info">Copy Perfect Money Address</button>
+<button onclick="myFunction()" class="btn btn-info">Copy Dodge Address</button>
 <script>
 function myFunction() {
   var copyText = document.getElementById("myInput");
@@ -285,14 +285,14 @@ function myFunction() {
      <form class="form-horizontal" action="pm.php?username=<?php  echo $_SESSION['username']?>&email=<?php  echo $_SESSION['email']?>&sessions= <?php  echo $_SESSION['session']?>" method="POST" >
 
        <div class="form-group">
-        <input type="double" id="pm" name="pm" placeholder="Value in Perfect Money is displayed here" readonly="true" class="form-control">
+        <input type="double" id="pm" name="pm" placeholder="Value in  dodge is displayed here" readonly="true" class="form-control">
       </div>
         <div class="form-group">
         <input type="double" onchange="btcconverter(this);" onkeyup="btcconverter(this);" id="usd" name="usd" placeholder="Amount in USD" class="form-control">
         </div>
        
         <div class="form-group">
-        <input type="text"  name="btctnx" placeholder="Paste the transferred PM transaction ID " class="form-control">
+        <input type="text"  name="btctnx" placeholder="Paste the transferred dodge coin address " class="form-control">
         </div>
 
         <input type="hidden"  name="email" value="<?php  echo $_SESSION['email']?>" class="form-control">

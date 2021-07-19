@@ -178,6 +178,8 @@ include 'header.php';
 							<th>Status</th>
 							<th>Tnx ID</th>
 							<th>Date</th>
+              <th>Re-Invest</th>
+
                                 
 
 
@@ -217,6 +219,8 @@ $sec ='Pending &nbsp;&nbsp;<i class="fa  fa-refresh" style=" font-size:20px;colo
 								<td><?php echo $sec;?></td>
 							<td><?php echo $row['tnxid'];?></td>
 							<td><?php echo $row['date'];?></td>
+              <td><button class="btn btn success">Re-Invest</button></td>
+
 
 
 						</tr>
@@ -255,7 +259,7 @@ $sec ='Pending &nbsp;&nbsp;<i class="fa  fa-refresh" style=" font-size:20px;colo
              				<th>Status</th>
 							<th>Tnx ID</th>
 							<th>Date</th>
-                                
+                       <!-- <th></th>          -->
 
 						</tr>
 					</thead>
