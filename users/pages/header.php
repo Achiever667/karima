@@ -197,14 +197,14 @@ function googleTranslateElementInit() {
 
 
 
-                            <!-- <li class="nav-item active submenu">
-								<a  href="downlines.php?&refcode=<?php  echo $_SESSION['refcode']?>&email=<?php  echo $_SESSION['email']?>">
+                            <li class="nav-item active submenu">
+								<a  href="referrals.php?&refcode=<?php  echo $_SESSION['refcode']?>&email=<?php  echo $_SESSION['email']?>">
 									<i class="fa fa-users"></i>
-									<p>My Downlines</p>
+									<p>My Referrals</p>
 									
 								</a>
 								
-							</li> -->
+							</li>
 
 
 

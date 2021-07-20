@@ -484,7 +484,7 @@ $start= $row['date'];
 											<div class="col-7 col-stats p-2">
 												<div class="numbers">
 													<p class="card-category" >Days To End</p>
-													<h4 class="card-title" > <?php echo $days;?>/6</h4>
+													<h4 class="card-title" > <sapn class="text-success"><?php echo $days;?></sapn>/ <span class="text-danger"><?php echo $days;?></span></h4>
 												</div>
 											</div>
 										</div>

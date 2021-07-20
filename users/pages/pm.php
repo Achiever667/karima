@@ -42,8 +42,6 @@ $email =$link->real_escape_string($_POST['email']);
 $status =$link->real_escape_string($_POST['status']);
 $refcode =$link->real_escape_string($_POST['refcode']);
 $referred =$link->real_escape_string($_POST['referred']);
-
-
 $tnx = uniqid('tnx');
 
 

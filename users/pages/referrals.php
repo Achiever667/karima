@@ -35,8 +35,6 @@ if(isset($_GET['refcode'])){
 }
 
 
- 
-
 
 include 'header.php';
 
@@ -87,11 +85,11 @@ include 'header.php';
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.print.min.js"></script>
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/buttons/1.5.6/js/buttons.colVis.min.js"></script>
   
-<div class="panel-header bg-primary-gradient">
+  <div class="panel-header bg-light-gradient shadow">
 						<div class="page-inner py-5">
 							<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
 								<div>
-									<h2 class="text-white pb-2 fw-bold">My Downlines</h2>
+									<h2 class="text-dark pb-2 fw-bold">My Referrals</h2>
 
 
 
@@ -100,7 +98,7 @@ include 'header.php';
 
 
                   
-									<h5 style="color:#fff" class="text-white op-7 mb-2"><marquee style="color:#fff" width="50%" >Thanks for investing in <?php  echo $name;?> have a nice day!</marquee></h5>
+									<h5 style="color:#000" class="text-dark op-7 mb-2"><marquee style="color:#000" width="50%" >Thanks for investing in <?php  echo $name;?> have a nice day!</marquee></h5>
 								</div>
 								</br>
 
@@ -108,12 +106,13 @@ include 'header.php';
               
 
 								<div class="ml-md-auto py-2 py-md-0">
-									
- <input type="text" id="myInput" style="width:70%; padding:4px; border-radius:5%;" value="https://<?php echo $bankurl;?>/users/form/signup.php?refcode=<?php echo $_SESSION['refcode'];?>" readonly="true"/><button class="btn btn-secondary" onclick="myFunction()">Click to copy Referral link</button>
+									<label for="" class="p-1 text-secondary">Referral Link</label><br>
+ <input type="text" id="myInput" style="width:50%; padding:4px; border-radius:5%;" value="https://<?php echo $bankurl;?>/users/form/signup.php?refcode=<?php echo $_SESSION['refcode'];?>" class="p-2 text-secondary" readonly="true"/>
+ <button class="btn border-secondary" onclick="myFunction()">Copy</button>
 								</div>
 							</div>
 						</div>
-				
+
 
 
 <div class="tradingview-widget-container">
@@ -168,7 +167,7 @@ include 'header.php';
 
 
 
-		 <h2 class="text-center">MY DOWNLINES</h2>
+		 <h2 class="text-center">MY REFERRALS</h2>
 		  </br>
 
 		</br>
@@ -192,6 +191,9 @@ include 'header.php';
 						<th>Username</th>
 							<th>My Code</th>
               <th>Registered Date</th>
+              <th>Referral Bonus</th>
+              <th>Claim Bonus</th>
+
             
           
 
@@ -222,7 +224,9 @@ include 'header.php';
             <td><?php echo $row['username'];?></td>
             <td><?php echo $row['referred'];?></td>
             <td><?php echo $row['date'];?></td>
-   
+            <td><?php echo $row['refbonus'];?></td>
+            <th><button class="btn btn-secondary" name="claim">Claim</button></th>
+
 </form>
 
 

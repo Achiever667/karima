@@ -142,7 +142,7 @@ if(isset($_POST['referrer'])){
 	
 	    $referred = $_POST['referred'];
 		$email = $_POST['email'];
-		// $tnx = $_POST['tnx'];
+		$tnx = $_POST['tnx'];
 		$usd = $_POST['usd'];
 		
 
