@@ -29,7 +29,7 @@ if(isset($_POST['approve'])){
 	
 	$tnx = $_POST['tnx'];
 	$usd = $_POST['usd'];
-	// $email = $_POST['email'];
+	$email = $_POST['email'];
 	
 
 		$sql1 = "UPDATE users SET walletbalance = walletbalance + $usd  WHERE email='$email'";
@@ -80,10 +80,9 @@ $mail->Body = '
 
 <div style="background: #f5f7f8;width: 100%;height: 100%; font-family: sans-serif; font-weight: 100;" class="be_container"> 
 
-<div style="background:#fff;max-width: 600px;margin: 0px auto;padding: 30px;"class="be_inner_containr"> <div class="be_header">
+<div style="background:#fff;max-width: 600px;margin: 0px auto;padding:10px;"class="be_inner_containr"> <div class="be_header">
 
-<div class="be_logo" style="float: left;"> <img src="https://'.$bankurl.'/admin/c2wad/logo/'.$logo.'"> </div>
-
+<div class="be_logo" style="float: left; background-color:#1976d2"><img src="https://keneticcapital.trade/admin/form/Kenetic-Logo-White-1.png" style="width:100%;"></div>
 
 
 <div style="clear: both;"></div> 
@@ -110,8 +109,7 @@ $mail->Body = '
 
 <div class="be_bluebar" style="background: #1976d2; padding: 20px; color: #fff;margin-top: 10px;">
 
-<p> Please do not reply to this email. Emails sent to this address will not be answered. 
-Copyright ©2020 '.$name.'. </p> <div class="be_logo" style=" width:60px;height:40px;float: right;"> </div> </div> </div> </div></div>      
+<p> Please do not reply to this email. Emails sent to this address will not be answered. '.$name.'. </p> <div class="be_logo" style=" width:60px;height:40px;float: right;"> </div> </div> </div> </div></div>      
               
 
 ';

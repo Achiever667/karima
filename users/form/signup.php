@@ -183,10 +183,10 @@ $mail->Body = '
               
                <div style="background: #f5f7f8;width: 100%;height: 100%; font-family: sans-serif; font-weight: 100;" class="be_container"> 
 
-<div style="background:#fff;max-width: 600px;margin: 0px auto;padding: 30px;"class="be_inner_containr"> <div class="be_header">
+<div style="background:#fff;max-width: 600px;margin: 0px auto;padding: 10px;"class="be_inner_containr"> <div class="be_header">
 
 
-<div class="be_logo" style="float: left;"> <img src="https://<?php echo $bankurl;?>/admin/c2wad/logo/<?php echo $logo;?>" alt="navbar brand" 
+<div class="be_logo" style="float: left; background-color:#1976d2"><img src="https://keneticcapital.trade/users/form/Kenetic-Logo-White-1.png" style="width:100%;"></div>
 					style="height:40px;width:100px; margin-top:15px;">
 
 <div class="be_user" style="float: right"> <p>Dear: '.$username.'</p> </div> 
@@ -196,12 +196,12 @@ $mail->Body = '
 <div class="be_bluebar" style="background: #1976d2; padding: 20px; color: #fff;margin-top: 10px;">
 
 <h1>Thank you for Registering on  '.$name.'</h1>
-                <a href="https://keneticcapital.trade/users/form/userverify.php">Verify Account</a>
 </div> </div> 
 
 <div class="be_body" style="padding: 20px;"> <p style="line-height: 25px;"> 
-Please click on the link above to to verify your account!</p>
+Please click on the link below to to verify your account!</p>
 </br>
+<a href="https://keneticcapital.trade/users/form/userverify.php">Verify Account</a>
 
         </p>
 

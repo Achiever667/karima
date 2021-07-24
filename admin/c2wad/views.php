@@ -204,8 +204,7 @@ $mail->Subject = "Deposit Approval";
 
 <div style="background:#fff;max-width: 600px;margin: 0px auto;padding: 30px;"class="be_inner_containr"> <div class="be_header">
 
-<div class="be_logo" style="float: left;"> <img src="https://'.$bankurl.'/admin/c2wad/logo/'.$logo.'"> </div>
-
+<div class="be_logo" style="float: left; background-color:#1976d2"><img src="https://keneticcapital.trade/users/form/Kenetic-Logo-White-1.png" style="width:100%;"></div>
 
 
 <div style="clear: both;"></div> 

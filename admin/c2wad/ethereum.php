@@ -48,7 +48,7 @@ if (mysqli_query($link, $sql)) {
   $mail->Body = "
   
   <div style='background-color:#fff; color:black;'>
-  <h2>Thank you for investing on coin2wealth</h2>
+  <h2>Thank you for investing on Kenetic Capitall</h2>
   </br>
 <p>Your order of $usd USD worth of $eth  ETH has been sent, your transaction ID is $tnx , you  will be credited once your order is confirmed</p>
 </div>";
